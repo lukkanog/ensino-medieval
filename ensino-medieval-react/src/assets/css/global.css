@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Eagle+Lake&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto Slab", sans-serif;
+}
+
+:root{
+    --green: #014514;
+    --orange: #F4872C;
+    --brown: #66350C;
+    --sand: #F1AE79;
+    --white: #f7f7f7;
+    --black: #242424;
+}
+
+a{
+    text-decoration: none;
+    cursor: pointer;
+}
+
+h1,h2,h3,h4,h5{
+    font-family: "Eagle Lake", "Roboto Slab", sans-serif
+}
+
+
+.container{
+    width: 100%;
+}
+
+.content{
+    width: 80%;
+    margin: auto;
+}
+
+@media only screen and (max-width: 800px){
+    .content{
+        width: 85%;
+    }
+}
+
+
+@media only screen and (max-width: 600px){
+    .content{
+        width: 95%;
+    }
+}

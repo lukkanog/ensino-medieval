@@ -1,0 +1,135 @@
+/* ################################ HEADER  ################################*/
+.home-header{
+    position: absolute;
+    height: 64px;
+    /* background: #21f65020; */
+}
+
+.home-nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+.header-logo{
+    width: 120px;
+    cursor: pointer;
+}
+
+.menu-options{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style-type: none;
+    width: 25%;
+    text-transform: uppercase;
+    font-weight: bolder;
+}
+
+.menu-link, .menu-item img{
+    transition: .15s ease;
+}
+
+.menu-link{
+    font-size: 14px;
+    color: var(--white);
+}
+
+.menu-item:hover img{
+    /* transforma o botão de play em laranja */
+    filter: invert(51%) sepia(50%) saturate(849%) hue-rotate(341deg) brightness(111%) contrast(91%);
+}
+
+.menu-item:hover .menu-link{
+    color: var(--orange);
+}
+
+.iniciar{
+    display: flex;
+    align-self: center;
+    justify-content: space-between;
+}
+
+.iniciar p{
+    margin-left: 5px;
+}
+
+
+/*################################ BANNER  ################################ */
+.banner{
+    background-image: url("../../assets/img/banner-background.jpg");
+    min-height: 85vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    /* z-index: 1; */
+}
+
+.banner-content{
+    min-height: inherit;
+    display: grid;
+    place-items: center;
+}
+
+.logo-e-botoes{
+    width: 450px;
+    margin-bottom: 5%;
+}
+
+.banner-logo{
+    margin-bottom: 1.5em;
+}
+
+.botoes-banner{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.button{
+    width: 45%;
+    font-size: 16px;
+    padding: .75em 0;
+    display: grid;
+    place-items: center;
+    border-radius: 5px;
+
+    box-shadow: inset #000000aa 0px 0px 20px, #000 5px 5px 15px;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: .25s
+}
+
+.button:hover{
+    animation: button-shake .25s;
+    filter: brightness(110%);
+}
+
+@keyframes button-shake{
+    25%{
+        transform: rotate(5deg);
+    }
+
+    75%{
+        transform: rotate(-5deg);
+    }
+
+    100%{
+        transform: none;
+    }
+}
+
+
+.brown-button{
+    color: var(--white);
+    background-color: var(--brown);
+}
+.orange-button{  
+    color: var(--brown);
+    background-color: var(--orange);
+}
+
