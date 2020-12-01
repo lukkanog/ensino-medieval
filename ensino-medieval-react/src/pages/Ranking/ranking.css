@@ -1,0 +1,28 @@
+.teste {
+    background-image: url("../../assets/img/trophy.svg");
+    width: 200px;
+    height: 200px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;        
+}
+.bannerRanking {
+    background-image: url("../../assets/img/banner-background.jpg");
+    min-height: 85vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;       
+}
+
+.bannerContentRanking {
+    min-height: inherit;
+    display: grid;
+    justify-content: center;
+    align-items: center;  
+}
+.bannerContentRanking img {
+    width: 200px;
+    height: 200px;
+}
