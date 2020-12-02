@@ -5,8 +5,12 @@ import "./home.css";
 import Logo from "../../assets/img/logo.svg";
 import DesenhoMaga from "../../assets/img/maga.png";
 import HomeCarousel from "../../components/HomeCarousel";
-
-import {useState} from "react";
+import Alquimista from "../../assets/img/alquimista.svg";
+import Cavaleira from "../../assets/img/cavaleira.svg";
+import Elfo from "../../assets/img/elfo.svg";
+import Furtivo from "../../assets/img/furtivo.svg";
+import Maga from "../../assets/img/mago.svg";
+import Guerreiro from "../../assets/img/guerreiro.svg";
 import { Link } from "react-router-dom";
 
 
@@ -41,11 +45,41 @@ export default function Home() {
 
             <section className="container reinos-container">
                 <h2 className="reinos-title">Desbrave os reinos e <br />conquiste novos territórios!</h2>
-
                 <HomeCarousel />
+            </section>
 
-
-                
+            <section class="container classes-container">
+                <div className="content classes-content">
+                    <h2 className="classes-title">Escolha sua classe!</h2>
+                    <div className="classes">
+                        <div className="classe">
+                            <img src={Cavaleira} alt="" className="classe-image"/>
+                            <h3 className="classe-name">Cavaleiro(a)</h3>
+                        </div>
+                        <div className="classe">
+                        <img src={Maga} alt="" className="classe-image"/>
+                            <h3 className="classe-name">Mago(a)</h3>
+                        </div>
+                        <div className="classe">
+                        <div className="classe-box">
+                            <img src={Furtivo} alt="" className="classe-image"/>
+                        </div>
+                            <h3 className="classe-name">Furtivo(a)</h3>
+                        </div>
+                        <div className="classe">
+                        <img src={Alquimista} alt="" className="classe-image"/>
+                            <h3 className="classe-name">Alquimista</h3>
+                        </div>
+                        <div className="classe">
+                        <img src={Guerreiro} alt="" className="classe-image"/>
+                            <h3 className="classe-name">Guerreiro(a)</h3>
+                        </div>
+                        <div className="classe">
+                        <img src={Elfo} alt="" className="classe-image"/>
+                            <h3 className="classe-name">Elfo(a)</h3>
+                        </div>
+                    </div>
+                </div>
             </section>
 
 

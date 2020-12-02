@@ -314,6 +314,81 @@ body{
     background-color: #645fae;
 }
 
-/* .seta-carousel{
-    background-image: url("../../assets/img/seta-verde.png");
+
+/* ################################ CLASSES ################################ */
+.classes-container{
+    background-image: url("../../assets/img/classes-silhueta.png");
+    background-color: var(--green);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: 100%;
+}
+
+.classes-content{
+    padding: 2em 0;
+}
+
+.classes-title{
+    text-align: center;
+    color: var(--white);
+    text-transform: uppercase;
+    margin-bottom: 2em;
+}
+
+.classes{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.classe{
+    text-align: center;
+    color: var(--white);
+    margin-bottom: 2em;
+    transition: .25s;
+
+}
+
+
+.classe-image{
+    object-fit: cover;
+    /* padding: 0 -2em; */
+    object-position: 50% -5%;
+    height: 240px;
+    width: 240px;
+    /* padding: 10px; */
+    background: var(--green);
+    box-shadow: #000 0px 0px 15px 5px;
+    transition: .25s;
+
+}
+
+/* .classe:nth-child(1) .classe-image{
+    background-color: red; 
+ 
 } */
+
+.classe:nth-child(n+4) .classe-image{
+    /* background-color: red; */
+    object-position: 50% -20%;
+
+}
+
+
+.classe-name{
+    font-size: 20px;
+    position: relative;
+    top: 5px;
+    transition: .25s;
+}
+
+.classe:hover{
+    transform: scale(1.1);
+}
+
+.classe:hover .classe-name{
+    color: var(--sand);
+}
+
