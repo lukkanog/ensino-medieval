@@ -1,5 +1,6 @@
 import React from "react";
 import Header from "../../components/Header";
+import Footer from "../../components/Footer";
 import "../../assets/css/global.css";
 import "./home.css";
 import Logo from "../../assets/img/logo.svg";
@@ -11,6 +12,8 @@ import Elfo from "../../assets/img/elfo.svg";
 import Furtivo from "../../assets/img/furtivo.svg";
 import Maga from "../../assets/img/mago.svg";
 import Guerreiro from "../../assets/img/guerreiro.svg";
+import Trofeu from '../../assets/img/trophy.png';
+
 import { Link } from "react-router-dom";
 
 
@@ -82,7 +85,63 @@ export default function Home() {
                 </div>
             </section>
 
+            <section className="container ranking-container">
+                <div className="content ranking-content">
+                    <div className="title-and-icon">
+                        <img src={Trofeu} alt="" className="trofeu-ranking"/>
+                        <h2 className="ranking-title">Conquiste seu lugar no ranking!</h2>
+                    </div>
 
+                    <div className="ranking">
+                        <div className="ranking-box">
+                            <p className="ranking-position">1</p>
+                            <img src={Furtivo} alt="" className="student-image"/>
+                            <div className="student-textgroup">
+                                <h3 className="student-name">Lucas Nogueira de Souza</h3>
+                                <p className="student-description">3º ano D · Furtivo</p>
+                            </div>
+                        </div>
+                        <div className="ranking-box">
+                            <p className="ranking-position">2</p>
+                            <img src={Furtivo} alt="" className="student-image"/>
+                            <div className="student-textgroup">
+                                <h3 className="student-name">Lucas Nogueira de Souza</h3>
+                                <p className="student-description">3º ano D · Furtivo</p>
+                            </div>
+                        </div>
+                        <div className="ranking-box">
+                            <p className="ranking-position">3</p>
+                            <img src={Furtivo} alt="" className="student-image"/>
+                            <div className="student-textgroup">
+                                <h3 className="student-name">Lucas Nogueira de Souza</h3>
+                                <p className="student-description">3º ano D · Furtivo</p>
+                            </div>
+                        </div>
+                        <div className="ranking-box">
+                            <p className="ranking-position">4</p>
+                            <img src={Furtivo} alt="" className="student-image"/>
+                            <div className="student-textgroup">
+                                <h3 className="student-name">Lucas Nogueira de Souza</h3>
+                                <p className="student-description">3º ano D · Furtivo</p>
+                            </div>
+                        </div>
+                        <div className="ranking-box">
+                            <p className="ranking-position">5</p>
+                            <img src={Furtivo} alt="" className="student-image"/>
+                            <div className="student-textgroup">
+                                <h3 className="student-name">Lucas Nogueira de Souza</h3>
+                                <p className="student-description">3º ano D · Furtivo</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <Link className="button orange-button ranking-button" to="/ranking">Ver ranking completo</Link>
+
+
+                </div>
+            </section>
+            
+            <Footer />
         </div>
     )
 

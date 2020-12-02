@@ -176,7 +176,6 @@ body{
 }
 
 .reinos-container{
-    /* min-height: 100vh; */
     z-index: 0;
     position: relative;
     top: -7.5em;
@@ -188,20 +187,14 @@ body{
     text-align: center;
     text-transform: uppercase;
     font-weight: bolder;
-    /* margin-bottom: 100px; */
 }
 
-    
-.slide{
-   display: flex;   
-   justify-content: space-between; 
-   align-items: center;
-   color: var(--green);
-   max-width: 70%;
-   margin: auto;
-
-   /* background: var(--orange); */
+.carousel{
+    position: relative;
+    top: -5em;
+    margin-bottom: -5em;
 }
+
 
 .slide-container{
     min-height: 100vh;
@@ -215,6 +208,16 @@ body{
     background-position-x: -10%;
     background-position-y: center;
 }
+
+
+.slide{
+    display: flex;   
+    justify-content: space-between; 
+    align-items: center;
+    color: var(--green);
+    max-width: 70%;
+    margin: auto;
+ }
 
 .exatas-container{
     background-image: url("../../assets/img/exatas-background.png");
@@ -325,7 +328,7 @@ body{
 }
 
 .classes-content{
-    padding: 2em 0;
+    padding: 3em 0;
 }
 
 .classes-title{
@@ -354,34 +357,27 @@ body{
 
 .classe-image{
     object-fit: cover;
-    /* padding: 0 -2em; */
     object-position: 50% -5%;
     height: 240px;
     width: 240px;
-    /* padding: 10px; */
     background: var(--green);
     box-shadow: #000 0px 0px 15px 5px;
     transition: .25s;
 
 }
 
-/* .classe:nth-child(1) .classe-image{
-    background-color: red; 
- 
-} */
-
 .classe:nth-child(n+4) .classe-image{
-    /* background-color: red; */
     object-position: 50% -20%;
 
 }
-
 
 .classe-name{
     font-size: 20px;
     position: relative;
     top: 5px;
     transition: .25s;
+    font-weight: 100;
+
 }
 
 .classe:hover{
@@ -390,5 +386,172 @@ body{
 
 .classe:hover .classe-name{
     color: var(--sand);
+}
+
+
+/* ################################ RANKING ################################ */
+.ranking-container{
+    background-image: url("../../assets/img/home-ranking-background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.ranking-content{
+    padding:3em 0;
+}
+
+
+.title-and-icon{
+    display: flex;
+    align-items: flex-end;
+}
+
+.ranking-title{
+    font-size: 34px;
+    margin-left: 5px;
+    color: #fff;
+    position: relative;
+    bottom: -5px;
+}
+
+
+.ranking{
+    margin: 50px 0;
+}
+
+.ranking-box{
+    background-color: #BB671F80;
+    width: 35%;
+    height: 90px;
+    margin: 1em 0;
+    padding: 10px;
+    color: var(--white);
+    display: flex;
+    align-items: center;
+    box-shadow: #00000050 0px 0px 15px 5px;
+}
+
+.ranking-position{
+    align-self: flex-start;
+    font-family: "Eagle Lake";
+    font-size: 16x;
+}
+
+.student-image{
+    background: #fff;
+    height: 100%;
+    width: 20%;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: top;
+    padding: 0 2%;
+    margin: 0 1em;
+}
+
+.student-name{
+    font-family: "Roboto Slab", sans-serif;
+    font-size: 18px;
+    font-weight: 900;
+}
+
+.student-description{
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.ranking-box:nth-child(1){
+    background-color: #BB671F;
+    width: 50%;
+    height: 120px;
+}
+
+.ranking-box:nth-child(1) .student-name{
+    font-size: 22px;
+}
+
+.ranking-box:nth-child(1) .student-description{
+    font-size: 16px;
+}
+
+.ranking-box:nth-child(2){
+    background-color: #BB671Fdd;
+    width: 40%;
+    height: 100px;
+}
+
+.ranking-box:nth-child(2) .student-name{
+    font-size: 20px;
+}
+
+.ranking-box:nth-child(2) .student-description{
+    font-size: 14px;
+}
+
+.ranking-box:nth-child(3){
+    background-color: #BB671Faa;
+}
+
+.ranking-button{
+    width: 30%;
+    margin: auto;
+}
+
+
+/* ################################ FOOTER ################################ */
+
+.footer{
+    background: var(--black);
+    margin: auto;
+    text-align: center;
+}
+
+.logo-footer{
+    width: 15%;
+    /* margin-bottom: 1em; */
+}
+
+.footer .content{
+    /* background: red; */
+    padding: 2em 0;
+}
+
+.footer-info::before{
+    content: "";
+    display: block;
+    background-color: var(--sand);
+    height: 3px;
+    width: 100%;
+    margin: 1.5em 0 0.5em 0;
+}
+
+.info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.copyright{
+    color: #b4b4b4;
+    text-transform: uppercase;
+    font-weight: medium;
+}
+
+.footer-links{
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer-link{
+    color: var(--sand);
+    transition: .25s;
+}
+
+.footer-link:hover{
+    text-decoration: underline;
 }
 
