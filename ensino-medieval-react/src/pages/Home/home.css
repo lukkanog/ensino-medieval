@@ -176,7 +176,7 @@ body{
 }
 
 .reinos-container{
-    min-height: 100vh;
+    /* min-height: 100vh; */
     z-index: 0;
     position: relative;
     top: -7.5em;
@@ -222,7 +222,18 @@ body{
 
 .natura-container{
     background-image: url("../../assets/img/natura-background.png");
+}
 
+.humanas-container{
+    background-image: url("../../assets/img/humanas-background.png");
+}
+
+.socioemocional-container{
+    background-image: url("../../assets/img/socioemocional-background.png");
+}
+
+.linguagens-container{
+    background-image: url("../../assets/img/linguagens-background.png");
 }
 
 .slide-title{
@@ -238,11 +249,71 @@ body{
     margin-left: 20px;
 }
 
-.wtf{
-    background-color: black;
-}
-
-
 .seta-carousel{
-    background-image: url("../../assets/img/seta-verde.png");
+    border: unset;
+    background: none;
+    position: absolute;
+    top: 50%;
+    margin: 0 10%;
+    transition: .25s;
 }
+
+.seta-carousel:hover{
+    transform: scale(1.25);
+    filter: brightness(175%);
+}
+
+.seta-carousel-direita{
+    transform: rotate(180deg);
+    right: 0;
+}
+
+.seta-carousel-direita:hover{
+    transform: rotate(180deg) scale(1.25);
+
+}
+
+.dot-group{
+    margin: auto;
+    text-align: center;
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: -15%;
+}
+
+
+.dot{
+    width: 19.5%;
+    min-height: 10px;
+    border: none;
+    background-color: #b8c2b5;
+    border-radius: 5px;
+    transition: .5s;
+    cursor: pointer;
+}
+
+.carousel__dot--selected:nth-child(1){
+    background-color: #c54955;
+}
+
+.carousel__dot--selected:nth-child(2){
+    background-color: #dda413;
+}
+
+.carousel__dot--selected:nth-child(3){
+    background-color: #7092cb;
+}
+
+.carousel__dot--selected:nth-child(4){
+    background-color: #b8d04c;
+}
+
+.carousel__dot--selected:nth-child(5){
+    background-color: #645fae;
+}
+
+/* .seta-carousel{
+    background-image: url("../../assets/img/seta-verde.png");
+} */

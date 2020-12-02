@@ -4,22 +4,16 @@ import "../../assets/css/global.css";
 import "./home.css";
 import Logo from "../../assets/img/logo.svg";
 import DesenhoMaga from "../../assets/img/maga.png";
-import ReinoExactus from "../../assets/img/exatas.png"
-import ReinoNatura from "../../assets/img/natura.png"
-import SetaCarousel from "../../assets/img/seta-verde.png";
+import HomeCarousel from "../../components/HomeCarousel";
 
 import {useState} from "react";
 import { Link } from "react-router-dom";
-// import Carousel, { arrowsPlugin, autoplayPlugin, fastSwipePlugin } from '@brainhubeu/react-carousel';
-// import '@brainhubeu/react-carousel/lib/style.css';
 
-import {Carousel} from "react-bootstrap";
 
-// import { Carousel } from 'react-responsive-carousel';
 
 
 export default function Home() {
-    const {currentSlide, changeSlide} = useState(0);
+
 
     return (
         <div className="Home">
@@ -48,48 +42,10 @@ export default function Home() {
             <section className="container reinos-container">
                 <h2 className="reinos-title">Desbrave os reinos e <br />conquiste novos territórios!</h2>
 
-                <div className="carousel">
-                    <div className="slide-container exatas-container">
-                        <div className="slide exatas-slide">
-                            <img alt="Imagem do Reino Exactus" src={ReinoExactus} className="reino-image" />
-                            <div className="reino-description">
-                                <h3 className="slide-title">Reino Exactus</h3>
-                                <p className="slide-text">As missões em Exactus exigem rápidez e raciocínio lógico, tornando você um verdadeiro mestre frio e calculista no campo das Exatas.</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div className="slide-container natura-container">
-                        <div className="slide natura-slide">
-                            <img alt="Imagem do Reino natura" src={ReinoNatura} className="reino-image" />
-                            <div className="reino-description">
-                                <h3 className="slide-title">Reino Natura</h3>
-                                <p className="slide-text">As missões em Exactus exigem rápidez e raciocínio lógico, tornando você um verdadeiro mestre frio e calculista no campo das Exatas.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                <HomeCarousel />
 
 
-                {/* <div className="slide-container exatas-container">
-                        <div className="slide exatas-slide">
-                            <img alt="Imagem do Reino Exactus" src={ReinoExactus} className="reino-image" />
-                            <div className="reino-description">
-                                <h3 className="slide-title">Reino Exactus</h3>
-                                <p className="slide-text">As missões em Exactus exigem rápidez e raciocínio lógico, tornando você um verdadeiro mestre frio e calculista no campo das Exatas.</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div className="slide-container natura-container">
-                        <div className="slide natura-slide">
-                            <img alt="Imagem do Reino natura" src={ReinoNatura} className="reino-image" />
-                            <div className="reino-description">
-                                <h3 className="slide-title">Reino Natura</h3>
-                                <p className="slide-text">As missões em Exactus exigem rápidez e raciocínio lógico, tornando você um verdadeiro mestre frio e calculista no campo das Exatas.</p>
-                            </div>
-                        </div>
-                    </div> */}
+                
             </section>
 
 
