@@ -4,6 +4,7 @@ import './index.css';
 import App from './App';
 import Home from "./pages/Home/Home";
 import Ranking from "./pages/Ranking/Ranking";
+import Login from "./pages/Login/Login";
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 
@@ -12,6 +13,7 @@ const Router = (
     <div>
       <Switch>
         <Route path="/ranking" component={Ranking}/>
+        <Route path="/login" component={Login}/>
         <Route path="/" component={Home}/>
       </Switch>  
     </div>

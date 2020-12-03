@@ -15,7 +15,7 @@ export default function Header() {
                         <Link className="menu-link" to="/ranking">Ranking</Link>
                     </li>
                     <li className="menu-item">
-                        <Link className="menu-link iniciar" to="/sobre">
+                        <Link className="menu-link iniciar" to="/login">
                             <img alt="" src={IconeIniciar} className="play-button" />
                             <p>Iniciar</p>
                         </Link>

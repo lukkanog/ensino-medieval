@@ -1,0 +1,119 @@
+.Login{
+    background-image: url("../../assets/img/login-drawing.png");
+    background-color: #362a0e;
+    /* background-color: red; */
+    height: 100vh;
+    width: 100%;
+    background-size: 58%;
+    background-position: bottom left;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+.back-link{
+    color: var(--white);
+    opacity: 80%;
+    position: absolute;
+    top: 40px;
+    left: 40px;
+    display: flex;
+    align-items: center;
+    transition: .25s;
+}
+
+.back-link:hover{
+    opacity: 100%;
+}
+
+.back-icon{
+    transform: rotate(180deg);
+    margin-right: 5px;
+}
+
+.login-container{
+    position: absolute;
+    right: 0px;
+    height: 100vh;
+    width: 47.5%;
+    background-image: url("../../assets/img/login-background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-right: 10%;
+
+}
+
+.login-content{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    height: 100%;
+}
+
+.login-block{
+    min-height: 450px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    /* background: pink; */
+    position: relative;
+    right: 0;
+}
+
+.login-title{
+    color: var(--brown);
+    font-family: "Roboto Slab";
+    font-size: 30px;
+    font-weight: bolder;
+
+}
+
+
+.login-form{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.logo{
+    width: 100%;
+}
+
+input{
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 5px;
+    border: unset;
+    box-shadow: #000 0px 0px 5px 0px;
+    color: var(--brown)
+}
+
+input::placeholder{
+    font-size: 14px;
+    color: var(--brown);
+    opacity: 60%;
+    font-weight: bolder;
+}
+
+.login-submit{
+    width: 100%;
+    color: var(--sand);
+    font-size: 14px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.login-submit:hover{
+    animation: none;
+}
+
+.esqueci-senha{
+    color: var(--brown);
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.esqueci-senha:hover{
+    text-decoration: underline;
+}

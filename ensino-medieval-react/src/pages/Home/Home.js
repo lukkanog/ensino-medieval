@@ -31,7 +31,7 @@ export default function Home() {
                     <div className="logo-e-botoes">
                         <img alt="Logo do Ensino Medieval" className="banner-logo" src={Logo} />
                         <div className="botoes-banner">
-                            <Link className="button brown-button">Iniciar</Link>
+                            <Link className="button brown-button" to="/login">Iniciar</Link>
                             <Link className="button orange-button" to="/ranking">Ranking</Link>
                         </div>
                     </div>
