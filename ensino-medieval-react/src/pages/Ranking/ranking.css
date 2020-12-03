@@ -18,11 +18,14 @@
 
 .bannerContentRanking {
     min-height: inherit;
-    display: grid;
+    display: flex;
+    flex-direction: row;
     justify-content: center;
-    align-items: center;  
+    align-items: center;
+    width: 60%;
+    margin-left: 15%;    
 }
 .bannerContentRanking img {
-    width: 200px;
-    height: 200px;
+    width: 30%;
+    height: 200px;    
 }

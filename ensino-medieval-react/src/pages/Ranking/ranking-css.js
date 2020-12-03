@@ -11,7 +11,7 @@ export const Banner = styled.div`
 
 export const BannerContent = styled.div`    
     min-height: inherit;
-    display: grid;
+    display: flex;
     justify-content: center;
     align-items: center;    
 `
@@ -24,8 +24,17 @@ export const Icon = styled.div`
 `
 
 export const Title = styled.h1`
-    color: #F4872C;
+    color: #ffc58f;
     font-size: 4em;
+`
+
+export const Content = styled.div`
+    width: 100%;   
+    height: auto; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 `
 
 export const MenuContent = styled.div`
@@ -35,20 +44,48 @@ export const MenuContent = styled.div`
     border-radius: 6px;   
     display: flex;    
     align-items: center; 
-    flex-direction: row;        
+    flex-direction: row;    
+    justify-content: space-between;
+    padding: 2px;    
+    margin-top: -3%; 
 `
 
 export const MenuContentSelected = styled.div`
-    height: 100%;
-    width: 30%;
+    height: 95%;
+    width: 33%;
     border-radius: 6px;       
-    background-color: #BB671F;
+    background-color: #fb602a; 
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    flex-direction: row;
+    p {
+        width: 30%;
+        font-size: 1.5em;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-weight: bold; 
+        color: #edc7a5;
+    }
 `
 export const MenuContentChoice = styled.div`
-    height: 100%;
-    width: 30%;
+    height: 95%;
+    width: 33%;
     border-radius: 6px;       
-    background-color: #BB671F;
+    background-color: #66350C;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    flex-direction: row;
+    p {
+        width: 30%;
+        font-size: 1.5em;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-weight: bold; 
+        color: #edc7a5;
+    };    
 `
+export const Img = styled.img`
+    width: 35%;    
+`;
 
 
