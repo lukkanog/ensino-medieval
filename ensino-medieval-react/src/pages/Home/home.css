@@ -178,8 +178,10 @@ body{
 .reinos-container{
     z-index: 0;
     position: relative;
-    top: -7.5em;
-    padding: 50px 0;
+    padding-top: 50px;
+    margin-bottom: -40vh;
+    top: -6.5em;
+
 }
 
 .reinos-title{
@@ -277,6 +279,11 @@ body{
 
 }
 
+.dot-group-container{
+    position: absolute;
+    width: 100%;
+}
+
 .dot-group{
     margin: auto;
     text-align: center;
@@ -284,6 +291,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    justify-items: center;
     margin-top: -15%;
 }
 
@@ -326,6 +334,7 @@ body{
     background-repeat: no-repeat;
     background-position: bottom;
     background-size: 100%;
+    z-index: 1000;
 }
 
 .classes-content{
@@ -556,3 +565,11 @@ body{
     text-decoration: underline;
 }
 
+
+/* gerall */
+/* .classes-container,
+.ranking-container,
+.footer{
+    top: -10em;
+    position: relative;
+} */

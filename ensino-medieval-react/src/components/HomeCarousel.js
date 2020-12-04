@@ -92,13 +92,15 @@ export default function HomeCarousel() {
                 <img alt="Próximo" src={SetaCarousel} className="seta-carousel seta-carousel-direita"/>
             </ButtonNext>
 
-            <div className="dot-group">
-                <Dot slide={0} className="dot exatas-dot" onClick={() => changeSlide(0)}></Dot>
-                <Dot slide={1} className="dot natura-dot"></Dot>
-                <Dot slide={2} className="dot linguagens-dot"></Dot>
-                <Dot slide={3} className="dot humanas-dot"></Dot>
-                <Dot slide={4} className="dot socioemocional-dot"></Dot>
-            </div>
+            <DotGroup className="dot-group-container">
+                <div className="dot-group">
+                    <Dot slide={0} className="dot exatas-dot" onClick={() => changeSlide(0)}></Dot>
+                    <Dot slide={1} className="dot natura-dot"></Dot>
+                    <Dot slide={2} className="dot linguagens-dot"></Dot>
+                    <Dot slide={3} className="dot humanas-dot"></Dot>
+                    <Dot slide={4} className="dot socioemocional-dot"></Dot>
+                </div>
+            </DotGroup>
 
 
         </CarouselProvider>
