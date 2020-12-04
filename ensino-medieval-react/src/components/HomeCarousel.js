@@ -1,10 +1,10 @@
 import React, {useState} from "react";
 
-import ReinoExactus from "../assets/img/exatas.png";
-import ReinoNatura from "../assets/img/natura.png";
-import ReinoLinguagens from "../assets/img/linguagens.png";
-import ReinoHumanas from "../assets/img/humanas.png";
-import ReinoSocio from "../assets/img/socioemocional.png";
+import ReinoExactus from "../assets/img/exatas.svg";
+import ReinoNatura from "../assets/img/natura.svg";
+import ReinoLinguagens from "../assets/img/linguagens.svg";
+import ReinoHumanas from "../assets/img/humanas.svg";
+import ReinoSocio from "../assets/img/socioemocional.svg";
 import SetaCarousel from "../assets/img/seta-verde.png";
 
 import { CarouselProvider, Slider, Slide, ButtonBack, ButtonNext, DotGroup, Dot } from 'pure-react-carousel';

@@ -10,12 +10,11 @@ export default function FormLogin() {
     const submitLogin = (e) => {
         e.preventDefault();
 
-        if (email == "email@email.com" && password == "123123")
-            setRedirect(true);
+        setRedirect(true);
     }
 
     if (shouldRedirect) {
-        return <Redirect to="/"/>
+        return <Redirect to="/map"/>
     } else {
 
         return (

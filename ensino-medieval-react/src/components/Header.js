@@ -6,7 +6,9 @@ export default function Header() {
     return (
         <header className="home-header container">
             <nav className="content home-nav">
-                <img src={Logo} alt="Logo do Ensino Medieval" className="header-logo" />
+                <Link to="/">
+                    <img src={Logo} alt="Logo do Ensino Medieval" className="header-logo" />
+                </Link>
                 <ul className="menu-options">
                     <li className="menu-item">
                         <Link className="menu-link" to="/sobre">Sobre</Link>

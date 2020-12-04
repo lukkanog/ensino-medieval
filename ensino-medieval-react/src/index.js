@@ -4,19 +4,19 @@ import './index.css';
 import App from './App';
 import Home from "./pages/Home/Home";
 import Ranking from "./pages/Ranking/Ranking";
+import Map from "./pages/Map/Map";
 import Login from "./pages/Login/Login";
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 
 const Router = ( 
   <BrowserRouter>
-    <div>
       <Switch>
         <Route path="/ranking" component={Ranking}/>
+        <Route path="/map" component={Map}/>
         <Route path="/login" component={Login}/>
-        <Route path="/" component={Home}/>
+        <Route exact path="/" component={Home}/>
       </Switch>  
-    </div>
   </BrowserRouter>
 )
 

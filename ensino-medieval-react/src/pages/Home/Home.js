@@ -1,8 +1,6 @@
 import React from "react";
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
-import "../../assets/css/global.css";
-import "./home.css";
 import Logo from "../../assets/img/logo.svg";
 import DesenhoMaga from "../../assets/img/maga.png";
 import HomeCarousel from "../../components/HomeCarousel";
@@ -13,8 +11,10 @@ import Furtivo from "../../assets/img/furtivo.svg";
 import Maga from "../../assets/img/mago.svg";
 import Guerreiro from "../../assets/img/guerreiro.svg";
 import Trofeu from '../../assets/img/trophy.png';
-
 import { Link } from "react-router-dom";
+import "../../assets/css/global.css";
+import "./home.css";
+
 
 
 

@@ -1,0 +1,139 @@
+.Map{
+    background-image: url("../../assets/img/map-background.jpg");
+    min-height: 100vh;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+}
+
+header{
+    z-index: 2;
+}
+
+.title-container{
+    background-image: url("../../assets/img/map-header-background.png");
+    background-position: center bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 1;
+    padding-bottom: 10%;
+
+}
+
+.Map .menu-options{
+    justify-content: flex-end;
+}
+
+.Map .iniciar p{
+    margin-left: 0;
+    margin-right: 5px;
+}
+
+.map-title{
+    position: relative;
+    margin: auto;
+    top: 10vh;
+    width: 50%;
+    text-align: center;
+    color: var(--sand);
+    font-weight: 100;
+    font-size: 30px;
+    padding-bottom: 50px;
+}
+
+
+/* ##########################  MAPA  ##########################*/
+
+
+.reinos{
+    /* min-height: 50vh; */
+    position: relative;
+    top: -35px;
+    width: 80%;
+    margin: auto;
+    display: grid;
+    justify-content: space-between;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-areas: 
+    "linguagens . socioemocional"
+    ". exatas ."
+    "humanas . natura"
+    ;
+}
+
+.reino{
+    margin: auto;
+    text-align: center;
+    position: relative;
+    transition: .25s ease; 
+}
+
+.reino:hover{
+    transform: scale(1.2);
+}
+
+.reino:nth-child(3){
+    top: -40%;
+}
+
+.reino:nth-child(n+4){
+    top: -80%;
+}
+.linguagens{
+    grid-area: linguagens;
+}
+
+.socioemocional{
+    grid-area: socioemocional;
+}
+
+.exatas{
+    grid-area: exatas;
+}
+
+.humanas{
+    grid-area: humanas;
+}
+
+.natura{
+    grid-area: natura;
+}
+
+.Map .reino-image{
+    width: 90%;
+}
+
+.reino-status{
+    font-family: "Eagle Lake", "Roboto Slab", sans-serif;
+    font-size: 25px;
+    font-weight: bolder;
+}
+
+.linguagens .reino-status{
+    color: #5F93CD;
+}
+.socioemocional .reino-status{
+    color: #2E52B2;
+}
+.exatas .reino-status{
+    color: #E34754;
+}
+.humanas .reino-status{
+    color: #626C2D;
+}
+.natura .reino-status{
+    color: #E56701;
+}
+/* FIX ME */
+/* .map-content{
+    background-image: url("../../assets/img/traçado-mapa.png");
+    background-position: left bottom;
+    background-repeat: no-repeat;
+    min-height: 30vh;
+    background-size: 40%;
+    width: 100%;
+    margin-top: 45vh;
+} */
