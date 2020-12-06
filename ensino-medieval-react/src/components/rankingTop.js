@@ -9,7 +9,7 @@ export default function RankingTop({ posicao, objPlayer}) {
             <p>{posicao}</p>
             <S.positionTop>
                 <div id="alunoTeste">
-                <ReactSVG src="../assets/icons/salas.svg" />
+                <ReactSVG src="../assets/icons/banner.svg" />
                 </div>
                 <img id="aluno" src={Aluno}></img>
                 <div>

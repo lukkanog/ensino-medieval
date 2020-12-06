@@ -14,7 +14,8 @@ import './ranking.css';
 
 //#region Importação dos ícones
 import Trofeu from '../../assets/icons/trophy.svg';
-import StudentCap from '../../assets/icons/students-cap.jpg';
+import StudentCapSelected from '../../assets/icons/studentCapSelected.svg';
+import StudentCapChoice from '../../assets/icons/studentCapChoice.svg';
 import Guildas from '../../assets/icons/guildas.jpg';
 import Salas from './../../assets/icons/salas.jpg';
 import Aluno from '../../assets/icons/eu.jpg'
@@ -36,7 +37,7 @@ export default function Ranking() {
             <S.Content>
                 {/* Escolha do ranking */}
                 <S.MenuContent>
-                    <S.MenuContentChoice onClick={() => {setRankingSelected('Aluno')}} style={{backgroundColor : rankingSelected === 'Aluno' ? '#fb602a' : '#4c2e12'}} ><S.Img src={StudentCap}></S.Img><p>Alunos</p></S.MenuContentChoice>
+                    <S.MenuContentChoice onClick={() => {setRankingSelected('Aluno')}} style={{backgroundColor : rankingSelected === 'Aluno' ? '#fb602a' : '#4c2e12'}} ><S.Img src={rankingSelected === 'Aluno' ? StudentCapSelected : StudentCapChoice}></S.Img><p>Alunos</p></S.MenuContentChoice>
                     <S.MenuContentChoice onClick={() => {setRankingSelected('Guilda')}} style={{backgroundColor : rankingSelected === 'Guilda' ? '#fb602a' : '#4c2e12'}}><S.Img src={Guildas} alt="Guildas"></S.Img><p>Guildas</p></S.MenuContentChoice>
                     <S.MenuContentChoice onClick={() => {setRankingSelected('Sala')}} style={{backgroundColor : rankingSelected === 'Sala' ? '#fb602a' : '#4c2e12'}}><S.Img src={Salas} alt="Salas"></S.Img><p>Salas</p></S.MenuContentChoice>
                 </S.MenuContent>

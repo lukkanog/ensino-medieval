@@ -135,5 +135,6 @@ export const Search = styled.div`
         width: 100%;
         border-width:0px !important;
         border:none !important;
-    }
+    };
+    z-index: 1;
 `
