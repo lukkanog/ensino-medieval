@@ -35,12 +35,13 @@ export const Content = styled.div`
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    margin-bottom: 2%;
 `
 
 export const MenuContent = styled.div`
     height: 100px;
     width: 800px;
-    background-color: #66350C;
+    background-color: #4c2e12;
     border-radius: 6px;   
     display: flex;    
     align-items: center; 
@@ -59,6 +60,7 @@ export const MenuContentSelected = styled.div`
     justify-content: center;
     align-items: center;  
     flex-direction: row;
+    cursor: pointer;
     p {
         width: 30%;
         font-size: 1.5em;
@@ -71,11 +73,12 @@ export const MenuContentChoice = styled.div`
     height: 95%;
     width: 33%;
     border-radius: 6px;       
-    background-color: #66350C;
+    background-color: #4c2e12;
     display: flex;
     justify-content: center;
     align-items: center;    
     flex-direction: row;
+    cursor: pointer;
     p {
         width: 30%;
         font-size: 1.5em;
@@ -85,7 +88,26 @@ export const MenuContentChoice = styled.div`
     };    
 `
 export const Img = styled.img`
-    width: 35%;    
+    width: 30%;    
+    margin-right: 5%;
 `;
+
+// Alinhamento horizontal do top 3 - Ranking
+export const RankingTopDiv = styled.div`    
+    width: 100%;
+    display: flex; 
+    margin-top: -5%; 
+    background-color: #fff9e8;
+    background-image: url('../../assets/icons/banners-ranking.svg');
+    min-height: 85vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    align-items: center;
+    justify-content: center;  
+    height: 20%;   
+    z-index: -1;     
+`
 
 

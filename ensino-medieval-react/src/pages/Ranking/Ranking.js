@@ -5,33 +5,37 @@ import * as S from './ranking-css';
 import './ranking.css';
 import Posicao from '../../components/posicao';
 import RankingTop from "../../components/rankingTop";
+import Footer from "../../components/Footer";
+import BtnVerMais from "../../components/btnVerMais";
 
 //#region Importação dos ícones
 import Trofeu from '../../assets/icons/trophy.svg';
-import StudentCap from '../../assets/icons/students-cap.svg';
-import Guildas from '../../assets/icons/guildas.svg';
-import Salas from '../../assets/icons/salas.svg';
+import StudentCap from '../../assets/icons/students-cap.jpg';
+import Guildas from '../../assets/icons/guildas.jpg';
+import Salas from './../../assets/icons/salas.jpg';
+import Aluno from '../../assets/icons/eu.jpg'
 //#endregion
 
 // Objeto utilizado como referência
 const objPlayerRank = {
-    name: 'Ricardo Ribeiro',    
+    name: 'Ricardo Ribeiro',
     sala: '3ºD',
     classe: 'Mago',
     pontuacao: 1250
 }
 let listRankings = [];
 
-function geraRankings (objPlayerRank) {
+function geraRankings(objPlayerRank) {
     for (let i = 0; i < 6; i++) {
-        listRankings.push(<Posicao posicao={i} objPlayer={objPlayerRank}/>)          
+        listRankings.push(<Posicao posicao={i} objPlayer={objPlayerRank} />)
     }
 }
 
-export default function Ranking() {    
+
+export default function Ranking() {
     return (
         <div>
-            <Header />  
+            <Header />
             {/* Banner */}
             <div className="bannerRanking">
                 <div className="bannerContentRanking">
@@ -47,19 +51,23 @@ export default function Ranking() {
                     <S.MenuContentChoice><S.Img src={Salas} alt="Salas"></S.Img><p>Salas</p></S.MenuContentChoice>
                 </S.MenuContent>
                 {/* Top 3 */}
-                <RankingTop posicao={1} objPlayer={objPlayerRank}/>
-                <RankingTop posicao={2} objPlayer={objPlayerRank}/>
-                <RankingTop posicao={3} objPlayer={objPlayerRank}/>
-                {/* Sua posição */}                                         
+                <S.RankingTopDiv>
+                    <RankingTop posicao={"2°"} objPlayer={objPlayerRank} />
+                    <RankingTop posicao={"1°"} objPlayer={objPlayerRank} />
+                    <RankingTop posicao={"3°"} objPlayer={objPlayerRank} />
+                </S.RankingTopDiv>
+                {/* Sua posição */}
                 {/* Demais posições  */}
-                <Posicao posicao={4} objPlayer={objPlayerRank}/>
-                <Posicao posicao={5} objPlayer={objPlayerRank}/>
-                <Posicao posicao={6} objPlayer={objPlayerRank}/>
-                <Posicao posicao={7} objPlayer={objPlayerRank}/>
-                <Posicao posicao={8} objPlayer={objPlayerRank}/>
-                <Posicao posicao={9} objPlayer={objPlayerRank}/>
-                <Posicao posicao={10} objPlayer={objPlayerRank}/>
+                <Posicao posicao={"4°"} objPlayer={objPlayerRank} />
+                <Posicao posicao={"5°"} objPlayer={objPlayerRank} />
+                <Posicao posicao={"6°"} objPlayer={objPlayerRank} />
+                <Posicao posicao={"7°"} objPlayer={objPlayerRank} />
+                <Posicao posicao={"8°"} objPlayer={objPlayerRank} />
+                <Posicao posicao={"9°"} objPlayer={objPlayerRank} />
+                <Posicao posicao={"10°"} objPlayer={objPlayerRank} />
+                <BtnVerMais texto="Ver mais" />
             </S.Content>
+            <Footer />
         </div>
     )
 }

@@ -1,11 +1,11 @@
 import * as S from './style-components';
-import Trofeu from '../assets/icons/trophy.svg';
+import Aluno from '../assets/icons/eu.svg';
 
 export default function Posicao({posicao, objPlayer}) {
     return (
         <S.objPosition>
             <p>{posicao}</p>
-            <img src={Trofeu}></img>
+            <img src={Aluno}></img>
             <div>
             <div>{objPlayer.name}</div>
             <div>{objPlayer.classe}</div>
