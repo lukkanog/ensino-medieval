@@ -1,9 +1,9 @@
 import * as S from './style-components';
 import Aluno from '../assets/icons/eu.svg';
 
-export default function Posicao({posicao, objPlayer}) {
-    return (
-        <S.objPosition>
+export default function Posicao({posicao, objPlayer, backgroundColor}) {
+    return (            
+        <S.objPosition style={{backgroundColor: `#${backgroundColor}`}}>
             <p>{posicao}</p>
             <img src={Aluno}></img>
             <div>
@@ -12,6 +12,6 @@ export default function Posicao({posicao, objPlayer}) {
             </div>
             <div>{objPlayer.sala}</div>
             <p>{objPlayer.pontuacao}</p>                         
-        </S.objPosition>
+        </S.objPosition>        
     )
 }

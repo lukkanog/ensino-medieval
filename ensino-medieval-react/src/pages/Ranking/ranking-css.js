@@ -53,7 +53,8 @@ export const MenuContent = styled.div`
 
 export const MenuContentSelected = styled.div`
     height: 95%;
-    width: 33%;
+    width: 32%;
+    margin-left: 3px;
     border-radius: 6px;       
     background-color: #fb602a; 
     display: flex;
@@ -91,6 +92,15 @@ export const Img = styled.img`
     width: 30%;    
     margin-right: 5%;
 `;
+
+export const TitleYourPosition = styled.p`
+    font-size: 26px;
+    color: #4c2e12;
+    font-weight: bold;
+    text-align: left;
+    margin-top: 3%;
+    width: 40%;
+`
 
 // Alinhamento horizontal do top 3 - Ranking
 export const RankingTopDiv = styled.div`    

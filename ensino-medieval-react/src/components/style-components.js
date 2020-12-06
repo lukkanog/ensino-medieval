@@ -1,8 +1,7 @@
 import styled from 'styled-components';
 
 //#region Componente Posicao
-export const objPosition = styled.div`
-    background-color: #fb602a;
+export const objPosition = styled.div`    
     width: 40%;
     height: 100px;
     border-radius: 8px;
@@ -86,6 +85,7 @@ export const pontuacaoTop = styled.div`
     border-radius: 0 0 8px 8px;
     p {
         color: white;
+        font-size: 28px;
     }
 `
 //#endregion
@@ -109,4 +109,13 @@ export const BtnVerMais = styled.div`
         cursor: pointer;
     }
     
+`
+
+// SearchRanking 
+export const Search = styled.div`
+    width: 40%;
+    display: flex;
+    img{
+        width: 1em;
+    }    
 `

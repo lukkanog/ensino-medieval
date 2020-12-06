@@ -14,6 +14,7 @@ import StudentCap from '../../assets/icons/students-cap.jpg';
 import Guildas from '../../assets/icons/guildas.jpg';
 import Salas from './../../assets/icons/salas.jpg';
 import Aluno from '../../assets/icons/eu.jpg'
+import SearchRanking from "../../components/searchRanking";
 //#endregion
 
 // Objeto utilizado como referência
@@ -26,9 +27,9 @@ const objPlayerRank = {
 let listRankings = [];
 
 function geraRankings(objPlayerRank) {
-    for (let i = 0; i < 6; i++) {
-        listRankings.push(<Posicao posicao={i} objPlayer={objPlayerRank} />)
-    }
+    for (let i = 4; i < 10; i++) {
+        listRankings.push(<Posicao posicao={i} objPlayer={objPlayerRank} backgroundColor='fb602a' />)
+    }    
 }
 
 
@@ -56,15 +57,18 @@ export default function Ranking() {
                     <RankingTop posicao={"1°"} objPlayer={objPlayerRank} />
                     <RankingTop posicao={"3°"} objPlayer={objPlayerRank} />
                 </S.RankingTopDiv>
-                {/* Sua posição */}
+                {/* Sua posição */}  
+                <S.TitleYourPosition>Sua posição</S.TitleYourPosition>              
+                <Posicao posicao={"4°"} objPlayer={objPlayerRank} backgroundColor='1f3b20'/>
+                <SearchRanking text="Pesquisar" colorBar='#FA5513'/>
                 {/* Demais posições  */}
-                <Posicao posicao={"4°"} objPlayer={objPlayerRank} />
-                <Posicao posicao={"5°"} objPlayer={objPlayerRank} />
-                <Posicao posicao={"6°"} objPlayer={objPlayerRank} />
-                <Posicao posicao={"7°"} objPlayer={objPlayerRank} />
-                <Posicao posicao={"8°"} objPlayer={objPlayerRank} />
-                <Posicao posicao={"9°"} objPlayer={objPlayerRank} />
-                <Posicao posicao={"10°"} objPlayer={objPlayerRank} />
+                <Posicao posicao={"4°"} objPlayer={objPlayerRank} backgroundColor='fb602a'/>
+                <Posicao posicao={"5°"} objPlayer={objPlayerRank} backgroundColor='fb602a'/>
+                <Posicao posicao={"6°"} objPlayer={objPlayerRank} backgroundColor='fb602a'/>
+                <Posicao posicao={"7°"} objPlayer={objPlayerRank} backgroundColor='fb602a'/>
+                <Posicao posicao={"8°"} objPlayer={objPlayerRank} backgroundColor='fb602a'/>
+                <Posicao posicao={"9°"} objPlayer={objPlayerRank} backgroundColor='fb602a'/>
+                <Posicao posicao={"10°"} objPlayer={objPlayerRank} backgroundColor='fb602a'/>
                 <BtnVerMais texto="Ver mais" />
             </S.Content>
             <Footer />
