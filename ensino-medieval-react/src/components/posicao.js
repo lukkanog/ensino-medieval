@@ -7,10 +7,10 @@ export default function Posicao({posicao, objPlayer, backgroundColor}) {
             <p>{posicao}</p>
             <img src={Aluno}></img>
             <div>
-            <div>{objPlayer.name}</div>
-            <div>{objPlayer.classe}</div>
-            </div>
-            <div>{objPlayer.sala}</div>
+            { objPlayer.name  == null ? "" : <div>{objPlayer.name}</div>}
+            { objPlayer.classe == null ? "" : <div>{objPlayer.classe}</div>}
+            </div>            
+            { objPlayer.sala == null ? "" : <div>{objPlayer.sala}</div>}
             <p>{objPlayer.pontuacao}</p>                         
         </S.objPosition>        
     )

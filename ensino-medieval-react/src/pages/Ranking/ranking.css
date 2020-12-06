@@ -5,15 +5,16 @@
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    background-attachment: fixed;        
+    background-attachment: fixed;
 }
+
 .bannerRanking {
     background-image: url("../../assets/img/banner-background.jpg");
     min-height: 85vh;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    background-attachment: fixed;       
+    background-attachment: fixed;
 }
 
 .bannerContentRanking {
@@ -23,9 +24,10 @@
     justify-content: center;
     align-items: center;
     width: 60%;
-    margin-left: 15%;    
+    margin-left: 15%;
 }
+
 .bannerContentRanking img {
     width: 30%;
-    height: 200px;    
+    height: 200px;
 }

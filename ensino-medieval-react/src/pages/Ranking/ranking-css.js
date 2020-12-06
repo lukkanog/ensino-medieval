@@ -51,25 +51,6 @@ export const MenuContent = styled.div`
     margin-top: -3%; 
 `
 
-export const MenuContentSelected = styled.div`
-    height: 95%;
-    width: 32%;
-    margin-left: 3px;
-    border-radius: 6px;       
-    background-color: #fb602a; 
-    display: flex;
-    justify-content: center;
-    align-items: center;  
-    flex-direction: row;
-    cursor: pointer;
-    p {
-        width: 30%;
-        font-size: 1.5em;
-        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-        font-weight: bold; 
-        color: #edc7a5;
-    }
-`
 export const MenuContentChoice = styled.div`
     height: 95%;
     width: 33%;

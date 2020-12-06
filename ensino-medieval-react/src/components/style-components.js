@@ -90,6 +90,16 @@ export const pontuacaoTop = styled.div`
 `
 //#endregion
 
+// Componente RankingAlunos
+export const DivContent = styled.div`
+    width: 100%;
+    z-index: -1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+`
+
 // Botão Ver mais
 export const BtnVerMais = styled.div`
     width: 180px;
@@ -115,7 +125,15 @@ export const BtnVerMais = styled.div`
 export const Search = styled.div`
     width: 40%;
     display: flex;
+    margin-top: 2%;
     img{
         width: 1em;
-    }    
+        margin-right: 10px;
+        opacity: 50%;
+    };
+    input {
+        width: 100%;
+        border-width:0px !important;
+        border:none !important;
+    }
 `
