@@ -1,10 +1,24 @@
+import React, {useState} from "react";
 import { Link } from "react-router-dom";
 import Logo from "../assets/img/logo.svg";
 import IconeIniciar from "../assets/img/play-button.png";
 
-export default function Header() {
+export default function Header(props) {
+
+    const [header, setHeader] = useState(false);
+
+    const changeHeader = () => {
+        if (window.scrollY > 120){
+            setHeader(true);
+        } else {
+            setHeader(false);
+        }
+    }
+
+    window.addEventListener("scroll", changeHeader);
+
     return (
-        <header className="home-header container">
+        <header className={`home-header container ${props.fixed ? header ? "fixed active" : "fixed" : null}`}>
             <nav className="content home-nav">
                 <Link to="/">
                     <img src={Logo} alt="Logo do Ensino Medieval" className="header-logo" />
