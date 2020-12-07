@@ -1,14 +1,16 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import Logo from "../assets/img/logo.svg";
 import IconeIniciar from "../assets/img/play-button.png";
+import IconeLogout from "../assets/img/logout.png";
+
 
 export default function Header(props) {
 
     const [header, setHeader] = useState(false);
 
     const changeHeader = () => {
-        if (window.scrollY > 120){
+        if (window.scrollY > 120) {
             setHeader(true);
         } else {
             setHeader(false);
@@ -23,20 +25,38 @@ export default function Header(props) {
                 <Link to="/">
                     <img src={Logo} alt="Logo do Ensino Medieval" className="header-logo" />
                 </Link>
-                <ul className="menu-options">
-                    <li className="menu-item">
-                        <Link className="menu-link" to="/sobre">Sobre</Link>
-                    </li>
-                    <li className="menu-item">
-                        <Link className="menu-link" to="/ranking">Ranking</Link>
-                    </li>
-                    <li className="menu-item">
-                        <Link className="menu-link iniciar" to="/login">
-                            <img alt="" src={IconeIniciar} className="play-button" />
-                            <p>Iniciar</p>
-                        </Link>
-                    </li>
-                </ul>
+                {props.logado ?
+
+                    <ul className="logado menu-options">
+                        <li className="menu-item">
+                            <Link className="menu-link" to="/missoes">Missões</Link>
+                        </li>
+
+                        <li className="menu-item">
+                            <Link className="menu-link iniciar" to="/">
+                                <p>Sair</p>
+                                <img alt="" src={IconeLogout} className="play-button" />
+                            </Link>
+                        </li>
+
+                    </ul>
+
+                    :
+                    <ul className="menu-options">
+                        <li className="menu-item">
+                            <Link className="menu-link" to="/sobre">Sobre</Link>
+                        </li>
+                        <li className="menu-item">
+                            <Link className="menu-link" to="/ranking">Ranking</Link>
+                        </li>
+                        <li className="menu-item">
+                            <Link className="menu-link iniciar" to="/login">
+                                <img alt="" src={IconeIniciar} className="play-button" />
+                                <p>Iniciar</p>
+                            </Link>
+                        </li>
+                    </ul>
+                }
             </nav>
         </header>
     )

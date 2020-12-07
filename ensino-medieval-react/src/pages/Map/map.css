@@ -23,15 +23,6 @@ header{
 
 }
 
-.Map .menu-options{
-    justify-content: flex-end;
-}
-
-.Map .iniciar p{
-    margin-left: 0;
-    margin-right: 5px;
-}
-
 .map-title{
     position: relative;
     margin: auto;

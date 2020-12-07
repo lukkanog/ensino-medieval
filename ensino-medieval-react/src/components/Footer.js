@@ -1,6 +1,5 @@
 import { Link } from "react-router-dom";
 import Logo from "../assets/img/logo.svg";
-import IconeIniciar from "../assets/img/play-button.png";
 
 export default function Footer() {
     return (
