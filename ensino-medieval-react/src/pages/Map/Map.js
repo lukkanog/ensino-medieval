@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import ReinoExactus from "../../assets/img/exatas.svg";
 import ReinoNatura from "../../assets/img/natura.svg";
 import ReinoLinguagens from "../../assets/img/linguagens.svg";
@@ -8,9 +8,12 @@ import { Link } from "react-router-dom";
 import Logo from "../../assets/img/logo.svg";
 import IconeLogout from "../../assets/img/logout.png";
 import Footer from "../../components/Footer";
+import GameOptions from "../../components/GameOptions";
+import Reinos from "../../components/Reinos";
 import "./map.css"
 
 export default function Map() {
+    
     return (
         <div className="Map">
             <header className="home-header container">
@@ -38,31 +41,13 @@ export default function Map() {
 
             <div className="container map-container">
                 <div className="content map-content">
-                    <div className="reinos">
-                        <div className="reino linguagens">
-                            <img src={ReinoLinguagens} alt="" className="reino-image"/>
-                            <p className="reino-status">100%</p>
-                        </div>
-                        <div className="reino socioemocional">
-                            <img src={ReinoSocio} alt="" className="reino-image"/>
-                            <p className="reino-status">100%</p>
-                        </div>
-                        <div className="reino exatas">
-                            <img src={ReinoExactus} alt="" className="reino-image"/>
-                            <p className="reino-status">100%</p>
-                        </div>
-                        <div className="reino humanas">
-                            <img src={ReinoHumanas} alt="" className="reino-image"/>
-                            <p className="reino-status">100%</p>
-                        </div>
-                        <div className="reino natura">
-                            <img src={ReinoNatura} alt="" className="reino-image"/>
-                            <p className="reino-status">100%</p>
-                        </div>
-                    </div>
+                    <GameOptions />
+
+                    <Reinos />
+                    
                 </div>
             </div>
-            {/* <Footer /> */}
+            <Footer />
         </div>
     )
 }
