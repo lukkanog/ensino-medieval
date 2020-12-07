@@ -284,6 +284,10 @@ body{
     width: 100%;
 }
 
+/* .dot-group button:nth-child(n-1){
+    display: none;
+} */
+
 .dot-group{
     margin: auto;
     text-align: center;
@@ -334,7 +338,7 @@ body{
     background-repeat: no-repeat;
     background-position: bottom;
     background-size: 100%;
-    z-index: 1000;
+    position: relative;
 }
 
 .classes-content{
