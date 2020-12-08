@@ -16,9 +16,6 @@ import "../../assets/css/global.css";
 import "./home.css";
 
 
-
-
-
 export default function Home() {
 
 

@@ -10,7 +10,7 @@ export default function Header(props) {
     const [header, setHeader] = useState(false);
 
     const changeHeader = () => {
-        if (window.scrollY > 120) {
+        if (window.scrollY > 80) {
             setHeader(true);
         } else {
             setHeader(false);

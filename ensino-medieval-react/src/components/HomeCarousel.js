@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React from "react";
 
 import ReinoExactus from "../assets/img/exatas.svg";
 import ReinoNatura from "../assets/img/natura.svg";
@@ -11,14 +11,10 @@ import { CarouselProvider, Slider, Slide, ButtonBack, ButtonNext, DotGroup, Dot 
 import 'pure-react-carousel/dist/react-carousel.es.css';
 
 export default function HomeCarousel() {
-    const [currentSlide, changeSlide] = useState(0);
 
-    // const selectSlide = function(slideNumber){
-    //     changeSlide(slideNumber);
-    // }
 
     return (
-        <CarouselProvider naturalSlideHeight={30} naturalSlideWidth={50} totalSlides={5} className="carousel" currentSlide={currentSlide}>
+        <CarouselProvider naturalSlideHeight={30} naturalSlideWidth={50} totalSlides={5} className="carousel">
             
             <Slider>
 
@@ -94,7 +90,7 @@ export default function HomeCarousel() {
 
             <DotGroup className="dot-group-container">
                 <div className="dot-group">
-                    <Dot slide={0} className="dot exatas-dot" onClick={() => changeSlide(0)}></Dot>
+                    <Dot slide={0} className="dot exatas-dot"></Dot>
                     <Dot slide={1} className="dot natura-dot"></Dot>
                     <Dot slide={2} className="dot linguagens-dot"></Dot>
                     <Dot slide={3} className="dot humanas-dot"></Dot>

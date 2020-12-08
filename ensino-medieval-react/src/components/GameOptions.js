@@ -11,10 +11,10 @@ import ReactTooltip from 'react-tooltip';
 export default function GameOptions(){
     return(
         <div className="game-options">
-            <Link className="game-option" data-for="options-tooltip" data-tip="Meu Perfil">
+            <Link to="/perfil" className="game-option" data-for="options-tooltip" data-tip="Meu Perfil">
                 <img src={IconeAvatar} alt="" className="game-option-icon"/>
             </Link>
-            <Link className="game-option" data-for="options-tooltip" data-tip="Minhas Missões">
+            <Link className="game-option" data-for="options-tooltip" data-tip="Missões">
                 <img src={iconeMissoes} alt="" className="game-option-icon"/>
             </Link>
             <Link to="/ranking" className="game-option" data-for="options-tooltip" data-tip="Ranking">

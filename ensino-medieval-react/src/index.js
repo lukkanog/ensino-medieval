@@ -1,17 +1,18 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
 import Home from "./pages/Home/Home";
 import Ranking from "./pages/Ranking/Ranking";
 import Map from "./pages/Map/Map";
 import Login from "./pages/Login/Login";
+import Profile from "./pages/Profile/Profile";
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 
 const Router = ( 
   <BrowserRouter>
       <Switch>
+        <Route path="/perfil" component={Profile}/>
         <Route path="/ranking" component={Ranking}/>
         <Route path="/map" component={Map}/>
         <Route path="/login" component={Login}/>
