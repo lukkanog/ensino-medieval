@@ -31,7 +31,6 @@ export default function Header(props) {
                         <li className="menu-item">
                             <Link className="menu-link" to="/missoes">Missões</Link>
                         </li>
-
                         <li className="menu-item">
                             <Link className="menu-link iniciar" to="/">
                                 <p>Sair</p>

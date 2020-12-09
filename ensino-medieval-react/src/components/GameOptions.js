@@ -14,7 +14,7 @@ export default function GameOptions(){
             <Link to="/perfil" className="game-option" data-for="options-tooltip" data-tip="Meu Perfil">
                 <img src={IconeAvatar} alt="" className="game-option-icon"/>
             </Link>
-            <Link className="game-option" data-for="options-tooltip" data-tip="Missões">
+            <Link to="/missoes" className="game-option" data-for="options-tooltip" data-tip="Missões">
                 <img src={iconeMissoes} alt="" className="game-option-icon"/>
             </Link>
             <Link to="/ranking" className="game-option" data-for="options-tooltip" data-tip="Ranking">

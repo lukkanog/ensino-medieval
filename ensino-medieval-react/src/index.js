@@ -16,7 +16,7 @@ const Router = (
         <Route path="/perfil" component={Profile}/>
         <Route path="/ranking" component={Ranking}/>
         <Route path="/missoes" component={Missoes}/>
-        <Route path="/map" component={Map}/>
+        <Route path="/mapa" component={Map}/>
         <Route path="/login" component={Login}/>
         <Route exact path="/" component={Home}/>
       </Switch>  

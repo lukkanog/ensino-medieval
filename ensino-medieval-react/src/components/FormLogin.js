@@ -14,9 +14,8 @@ export default function FormLogin() {
     }
 
     if (shouldRedirect) {
-        return <Redirect to="/map"/>
+        return <Redirect to="/mapa"/>
     } else {
-
         return (
             <form className="login-form" onSubmit={submitLogin}>
                 <input placeholder="Email" type="email" name="email" id="email" onChange={e => setEmail(e.target.value)} />

@@ -199,4 +199,124 @@
     display: grid;
     place-items: center;
     margin: .25em 0;
+    transition: .25s;
+}
+
+.item:hover,
+.items .active-option{
+    border: solid 2px #FB602A;
+    background: unset;
+    cursor: pointer;
+}
+
+
+/* ############################## INVENTARIO ############################## */
+.inventory-box{
+    height: unset;
+    padding: unset;
+    top: unset;
+    margin-bottom: 15em;
+    display: block;
+}
+
+.inventory-options{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    width: 20%;
+    padding: 2em;
+ 
+}
+
+.inventory-option:nth-child(1){
+    max-width: 100%;
+}
+
+.inventory-option{
+    height: auto;
+    width: auto;
+    transform: .5s ease;
+    cursor: pointer;
+    transition: .5s ease;
+    filter: drop-shadow(#00000090 0px 10px 5px);
+}
+
+.inventory-option:hover{
+    transform: scale(1.2);
+
+}
+
+
+.inventory-items{
+    /* padding: 2em; */
+    background-color: var(--sand);
+    width: 80%;
+}
+
+.inventory-items-header{
+    background-color: var(--brown);
+    padding: 1em;
+    padding-right: calc(5% + 4em);
+    border-radius: 15px;
+    color: #FB602A;
+    clip-path: polygon(100% 0%, 95% 50%, 100% 100%, 0 100%, 0% 10%, 0 0);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    right: -2em;
+    margin-top: 50px;
+    width: 105%;
+    box-shadow: inset #000000aa 0px 0px 50px;
+}
+
+.inventory-header-shadow{
+    filter: drop-shadow(10px 10px 5px #000000aa);
+}
+
+.inventory-items-title{
+    font-family: "Roboto Slab", sans-serif;
+    font-size: 25px;
+}
+
+.order-form{
+    display: flex;
+    flex-direction: column;
+}
+
+#order-by{
+    padding: none;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid var(--sand);
+    margin-top: 5px;
+    background: none;
+    color: var(--sand);
+    cursor: pointer;
+}
+
+.inventory-items-group{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2em;
+    justify-content: space-between;
+}
+
+/* .inventory-item{
+    min-width: 30%;
+} */
+
+.inventory-item-image{
+    height: 175px;
+    width: 175px;
+    padding: 25px;
+    border: 2px solid var(--brown);
+    border-radius: 10px;
+    box-shadow: #00000050 1px 1px 10px;
+}
+
+.inventory-item-name{
+    color: var(--brown);
+    font-weight: bold;
 }
