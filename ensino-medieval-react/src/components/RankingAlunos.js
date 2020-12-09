@@ -34,13 +34,13 @@ export default function RankingAlunos() {
             <Posicao posicao={"4°"} objPlayer={objPlayerRank} backgroundColor='1f3b20' />
             <SearchRanking text="Pesquisar" colorBar='#FA5513' />
             {/* Demais posições  */}
-            <Posicao posicao={"4°"} objPlayer={objPlayerRank} backgroundColor='fb602a' />
-            <Posicao posicao={"5°"} objPlayer={objPlayerRank} backgroundColor='fb602a' />
-            <Posicao posicao={"6°"} objPlayer={objPlayerRank} backgroundColor='fb602a' />
-            <Posicao posicao={"7°"} objPlayer={objPlayerRank} backgroundColor='fb602a' />
-            <Posicao posicao={"8°"} objPlayer={objPlayerRank} backgroundColor='fb602a' />
-            <Posicao posicao={"9°"} objPlayer={objPlayerRank} backgroundColor='fb602a' />
-            <Posicao posicao={"10°"} objPlayer={objPlayerRank} backgroundColor='fb602a' />
+            <Posicao typeRanking='Aluno' posicao={"4°"} objPlayer={objPlayerRank} backgroundColor='fb602a' />
+            <Posicao typeRanking='Aluno' posicao={"5°"} objPlayer={objPlayerRank} backgroundColor='fb602a' />
+            <Posicao typeRanking='Aluno' posicao={"6°"} objPlayer={objPlayerRank} backgroundColor='fb602a' />
+            <Posicao typeRanking='Aluno' posicao={"7°"} objPlayer={objPlayerRank} backgroundColor='fb602a' />
+            <Posicao typeRanking='Aluno' posicao={"8°"} objPlayer={objPlayerRank} backgroundColor='fb602a' />
+            <Posicao typeRanking='Aluno' posicao={"9°"} objPlayer={objPlayerRank} backgroundColor='fb602a' />
+            <Posicao typeRanking='Aluno' posicao={"10°"} objPlayer={objPlayerRank} backgroundColor='fb602a' />
         </C.DivContent>
     )
 }

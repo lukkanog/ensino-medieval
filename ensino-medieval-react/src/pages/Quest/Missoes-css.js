@@ -24,8 +24,8 @@ export const MenuContent = styled.div`
     align-items: center; 
     flex-direction: row;    
     justify-content: space-between;
-    padding: 2px;    
-    margin-top: -3%; 
+    padding: 2px 4px ;    
+    margin-top: -4%; 
 `
 
 export const MenuContentChoice = styled.div`
@@ -35,7 +35,7 @@ export const MenuContentChoice = styled.div`
     background-color: #4c2e12;
     display: flex;
     justify-content: center;
-    align-items: center;    
+    align-items: center;      
     flex-direction: row;
     cursor: pointer;
     p {
