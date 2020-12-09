@@ -3,13 +3,13 @@ import Aluno from '../assets/icons/eu.svg';
 import { render } from 'react-dom'
 import { ReactSVG } from 'react-svg'
 
-export default function RankingTop({ posicao, objPlayer}) {
+export default function RankingTop({ posicao, objPlayer }) {
     return (
         <S.Objeto>
             <p>{posicao}</p>
             <S.positionTop>
                 <div id="alunoTeste">
-                <ReactSVG src="../assets/icons/banner.svg" />
+                    <ReactSVG src="../assets/icons/banner.svg" />
                 </div>
                 <img id="aluno" src={Aluno}></img>
                 <div>

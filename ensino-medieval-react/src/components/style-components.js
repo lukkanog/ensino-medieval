@@ -137,4 +137,71 @@ export const Search = styled.div`
         border:none !important;
     };
     z-index: 1;
+    `
+
+//#region Kingdom Component
+// KingdomContent
+export const ContentMissoes = styled.div`
+        width: 45%;
+        margin-top: 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
 `
+
+// KingdomItem
+export const objKingdomItem = styled.div`  
+    cursor: pointer;  
+    width: 100%;  
+    height: 100px;
+    border-radius: 8px;
+    color: #5c3817;    
+    display: flex;    
+    align-items: center;
+    padding: 2%; 
+    font-weight: bold;      
+    font-size: 20px;            
+    img {
+        width: 20%;
+        margin-left: -7%;        
+    }       
+    div {
+        width: 45%;                
+        margin: 20px;
+        display: flex;
+        
+    }          
+    p {        
+        color: #fb602a;
+        margin-left: 12px;        
+    }
+`
+
+export const pontuacao = styled.div`
+    justify-content: flex-end;    
+`
+
+export const listActivities = styled.div`
+    width: 90%;
+    display: flex;        
+    flex-direction: column;    
+`
+
+export const ItemList = styled.div`
+    width: 100%;
+    display: flex;    
+    align-items: center;    
+    justify-content: space-between;   
+    margin-top: 16px;   
+    p {
+        color: #5c3817;
+    }  
+`
+
+export const pPontuacao = styled.p`
+    color: #fb602a !important;
+    font-weight: bold ;
+`
+
+//#endregion
