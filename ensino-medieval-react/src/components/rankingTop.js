@@ -1,6 +1,5 @@
 import * as S from './style-components';
 import Aluno from '../assets/icons/eu.svg';
-import { render } from 'react-dom'
 import { ReactSVG } from 'react-svg'
 
 export default function RankingTop({ posicao, objPlayer }) {

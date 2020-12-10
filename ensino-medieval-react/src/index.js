@@ -9,6 +9,7 @@ import Profile from "./pages/Profile/Profile";
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import Missoes from './pages/Quest/Missoes';
+import Guilda from './pages/Guild/Guilda';
 
 const Router = ( 
   <BrowserRouter>
@@ -16,6 +17,7 @@ const Router = (
         <Route path="/perfil" component={Profile}/>
         <Route path="/ranking" component={Ranking}/>
         <Route path="/missoes" component={Missoes}/>
+        <Route path="/guildas" component={Guilda}/>
         <Route path="/mapa" component={Map}/>
         <Route path="/login" component={Login}/>
         <Route exact path="/" component={Home}/>

@@ -107,7 +107,7 @@ export const BtnVerMais = styled.div`
     margin-top: 2%;
     min-height: 30px;
     min-width: 140px;    
-    background-color: #FA5513;
+    background-color: #F4872C;
     text-align: center;    
     display: flex;
     justify-content: center;
@@ -205,3 +205,45 @@ export const pPontuacao = styled.p`
 `
 
 //#endregion
+
+//#region GuildEnter Component
+export const ContainerGuildEnter = styled.div`
+    width: 80%;
+    margin: 5%;    
+    display: flex;
+    justify-content: space-around;
+    align-items: center;        
+`
+export const CardGuildEnter = styled.div`
+    width: 38%;
+    height: 280px;
+    display: grid;
+    grid-template-rows: 20% 1fr;
+    background-color: #ffc58f;
+    padding: 48px;
+    border-radius: 10px;
+    h2 {
+        color: #5c3817;
+        height: 30%; 
+    }
+    p{
+        height: 48px;
+        margin-top: 20px;       
+    }      
+    input {
+        width: 90%;
+    }
+
+`
+export const ContainerMyGuild = styled.div`
+    width: 100%;
+`
+
+//#region  MyGuild Component
+export const ContainerParticipantes = styled.div`
+    width: 100%;
+    display: flex;
+    margin-top: 2%;
+    margin-left: 10%;
+
+`

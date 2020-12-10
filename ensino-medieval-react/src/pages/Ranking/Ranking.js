@@ -16,7 +16,7 @@ import './ranking.css';
 import Trofeu from '../../assets/icons/trophy.svg';
 import StudentCapSelected from '../../assets/icons/studentCapSelected.svg';
 import StudentCapChoice from '../../assets/icons/studentCapChoice.svg';
-import Guildas from '../../assets/icons/guildas-icon.svg';
+import Guildas from '../../assets/icons/shield.svg';
 import SalasChoice from './../../assets/icons/salas-icon-teste-dont.svg';
 import SalasSelected from './../../assets/icons/salas-icon-teste-do.svg';
 import Aluno from '../../assets/icons/eu.jpg'
@@ -39,7 +39,7 @@ export default function Ranking() {
                 {/* Escolha do ranking */}
                 <S.MenuContent>
                     <S.MenuContentChoice onClick={() => { setRankingSelected('Aluno') }} style={{ backgroundColor: rankingSelected === 'Aluno' ? '#fb602a' : '#4c2e12' }} ><S.Img src={rankingSelected === 'Aluno' ? StudentCapSelected : StudentCapChoice}></S.Img><p>Alunos</p></S.MenuContentChoice>
-                    <S.MenuContentChoice onClick={() => { setRankingSelected('Guilda') }} style={{ backgroundColor: rankingSelected === 'Guilda' ? '#fb602a' : '#4c2e12' }}><S.Img src={Guildas} alt="Guildas"></S.Img><p>Guildas</p></S.MenuContentChoice>
+                    <S.MenuContentChoice onClick={() => { setRankingSelected('Guilda') }} style={{ backgroundColor: rankingSelected === 'Guilda' ? '#fb602a' : '#4c2e12', width: '25%' }}><S.Img src={Guildas} alt="Guildas"></S.Img><p>Guildas</p></S.MenuContentChoice>
                     <S.MenuContentChoice onClick={() => { setRankingSelected('Sala') }} style={{ backgroundColor: rankingSelected === 'Sala' ? '#fb602a' : '#4c2e12' }}><S.Img src={rankingSelected === 'Sala' ? SalasSelected : SalasChoice} alt="Salas"></S.Img><p>Salas</p></S.MenuContentChoice>
                 </S.MenuContent>
                 {rankingSelected === 'Aluno' ? <RankingAlunos /> : <div></div>}
