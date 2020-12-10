@@ -29,6 +29,9 @@ export default function Header(props) {
 
                     <ul className="logado menu-options">
                         <li className="menu-item">
+                            <Link className="menu-link" to="/mapa">Reinos</Link>
+                        </li>
+                        <li className="menu-item">
                             <Link className="menu-link" to="/missoes">Missões</Link>
                         </li>
                         <li className="menu-item">

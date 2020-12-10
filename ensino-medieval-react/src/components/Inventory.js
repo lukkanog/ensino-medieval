@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import SpecialIcon from "../assets/img/medalha-especial.png";
 import ReinoExactus from "../assets/img/exatas.svg";
 import ReinoNatura from "../assets/img/natura.svg";
@@ -11,7 +11,34 @@ import MedalhaPsico from "../assets/img/Psicologia.svg";
 
 export default function Inventory() {
 
-    // const [opcaoinventario, setOpcaoInventario] = useState('medalhas');
+    const [ opcaoinventario, setOpcaoInventario ] = useState('medalhas');
+    const [ titulo, setTitulo ] = useState(String);
+
+    useEffect(() => {
+        switch (opcaoinventario) {
+            case "medalhas":
+                setTitulo("Medalhas Especiais");
+                break;
+            case "humanas":
+                setTitulo("Medalhas do Reino Humanus");
+                break;
+            case "natura":
+                setTitulo("Medalhas do Reino Natura");
+                break;
+            case "socioemocional":
+                setTitulo("Medalhas do Reino Socius Émottionnel");  
+                break;
+            case "exatas":
+                setTitulo("Medalhas do Reino Exactus");  
+                break;
+            case "linguagens":
+                setTitulo("Medalhas do Reino Lenguatges");
+                break;
+        
+            default:
+                break;
+        }
+    })
 
     return (
 
@@ -25,19 +52,48 @@ export default function Inventory() {
 
             <div className="card-content">
                 <div className="inventory-options">
-                    <img className="inventory-option" src={SpecialIcon} alt="" />
-                    <img className="inventory-option" src={ReinoHumanas} alt="" />
-                    <img className="inventory-option" src={ReinoNatura} alt="" />
-                    <img className="inventory-option" src={ReinoSocio} alt="" />
-                    <img className="inventory-option" src={ReinoExactus} alt="" />
-                    <img className="inventory-option" src={ReinoLinguagens} alt="" />
+                    <img 
+                    onClick={() => setOpcaoInventario("medalhas")}         
+                    className={opcaoinventario === "medalhas" ? "active-option inventory-option" : "inventory-option"} 
+                    src={SpecialIcon} 
+                    alt="" />
+
+                    <img 
+                    onClick={() => setOpcaoInventario("humanas")}          
+                    className={`inventory-option ${opcaoinventario === "humanas" ? "active-option" : null}`}
+                    src={ReinoHumanas} 
+                    alt="" />
+
+                    <img 
+                    onClick={() => setOpcaoInventario("natura")}           
+                    className={`inventory-option ${opcaoinventario === "natura" ? "active-option" : null}`}
+                    src={ReinoNatura} 
+                    alt="" />
+
+                    <img 
+                    onClick={() => setOpcaoInventario("socioemocional")}   
+                    className={`inventory-option ${opcaoinventario === "socioemocional" ? "active-option" : null}`}
+                    src={ReinoSocio} 
+                    alt="" />
+
+                    <img 
+                    onClick={() => setOpcaoInventario("exatas")}           
+                    className={`inventory-option ${opcaoinventario === "exatas" ? "active-option" : null}`}
+                    src={ReinoExactus} 
+                    alt="" />
+
+                    <img 
+                    onClick={() => setOpcaoInventario("linguagens")}       
+                    className={`inventory-option ${opcaoinventario === "linguagens" ? "active-option" : null}`}
+                    src={ReinoLinguagens} 
+                    alt="" />
                 </div>
 
                 <div className="inventory-items">
                     <div className="inventory-header-shadow">
 
                         <div className="inventory-items-header">
-                            <h3 className="inventory-items-title">Medalhas Especiais</h3>
+                            <h3 className="inventory-items-title">{titulo}</h3>
                             <form className="order-form">
                                 <label htmlFor="order-by">Ordenar por</label>
                                 <select name="order-by" id="order-by">
