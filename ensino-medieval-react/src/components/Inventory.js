@@ -52,7 +52,7 @@ export default function Inventory() {
                     <div className="inventory-items-group">
                         <div className="inventory-item">
                             <p className="inventory-item-name">Psicologia</p>
-                            <img src={MedalhaPsico} alt="" className="inventory-item-image" />
+                            <img src={MedalhaPsico} alt="" className="inventory-item-image active-option" />
                         </div>
                         <div className="inventory-item">
                         <p className="inventory-item-name">Psicologia</p>

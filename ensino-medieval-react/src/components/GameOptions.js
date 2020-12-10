@@ -20,7 +20,7 @@ export default function GameOptions(){
             <Link to="/ranking" className="game-option" data-for="options-tooltip" data-tip="Ranking">
                 <img src={IconeTrofeu} alt="" className="game-option-icon"/>
             </Link>
-            <Link className="game-option" data-for="options-tooltip" data-tip="Guildas">
+            <Link to="/guildas" className="game-option" data-for="options-tooltip" data-tip="Guildas">
                 <img src={IconeEscudo} alt="" className="game-option-icon"/>
             </Link>
 

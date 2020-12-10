@@ -303,9 +303,6 @@
     justify-content: space-between;
 }
 
-/* .inventory-item{
-    min-width: 30%;
-} */
 
 .inventory-item-image{
     height: 175px;
@@ -319,4 +316,8 @@
 .inventory-item-name{
     color: var(--brown);
     font-weight: bold;
+}
+
+.inventory-items .active-option{
+    
 }
