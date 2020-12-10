@@ -121,7 +121,7 @@ body{
     z-index: 0;
     position: relative;
     padding-top: 50px;
-    margin-bottom: -40vh;
+    margin-bottom: -200px;
     top: -6.5em;
 
 }
@@ -201,7 +201,7 @@ body{
     border: unset;
     background: none;
     position: absolute;
-    top: 50%;
+    top: 45%;
     margin: 0 10%;
     transition: .25s;
 }
@@ -453,3 +453,16 @@ body{
 }
 
 
+
+
+
+/* ################################ RESPONSITIVY - BIG SCREENS ################################ */
+@media only screen and (min-width:1600px){
+    .card-text{
+        font-size: 18px;
+    }
+
+    .dot{
+        height: 12.5px;
+    }
+}
