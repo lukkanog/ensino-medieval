@@ -14,7 +14,7 @@ export default function HomeCarousel() {
 
 
     return (
-        <CarouselProvider naturalSlideHeight={30} naturalSlideWidth={50} totalSlides={5} className="carousel">
+        <CarouselProvider naturalSlideHeight={30} naturalSlideWidth={50} totalSlides={5} className="carousel" isPlaying isIntrinsicHeight>
             
             <Slider>
 

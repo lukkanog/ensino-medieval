@@ -228,9 +228,7 @@ body{
     width: 100%;
 }
 
-/* .dot-group button:nth-child(n-1){
-    display: none;
-} */
+
 
 .dot-group{
     margin: auto;
@@ -240,7 +238,7 @@ body{
     align-items: center;
     justify-content: space-between;
     justify-items: center;
-    margin-top: -15%;
+    margin-top: -10%;
 }
 
 
@@ -489,6 +487,7 @@ body{
 
     .slide-container{
         top: -5em;
+        min-height: 80vh;
     }
 
     .classe-image{
@@ -541,8 +540,14 @@ body{
     }
 
     .slide-container{
-        min-height: 60vh;
+        min-height: 500px;
+        top: 5px;
     }
+
+    .dot-group{
+        margin-top: -20%;
+    }
+
 
     .slide-title{
         font-size: 25px;
@@ -632,8 +637,47 @@ body{
         font-size: 14px;
     }
 
+    .reinos-container{
+        /* padding: 10em 0; */
+        min-height: 100vh;
+        padding-top: 30px;
+
+    }
+
+    .reinos-title{
+        margin-bottom: 50px;
+    }
 
 
+    .slide-container{
+        height: 90%;
+        background-size: 150%;
+        background-position-x: -250px;
+
+        /* min-height: 10vh; */
+    }
+
+    .slide{
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .reino-image{
+        width: 100%;
+    }
+
+    .reino-description{
+        width: 100%;
+    }
+
+    .dot-group{
+        width: 90%;
+    }
+
+    .dot{
+        min-height: 5px;
+    }
+    
     .classes{
         width: 100%;
         justify-content: space-around;
@@ -644,19 +688,38 @@ body{
         width: 150px;
     }
 
-    .reinos-container{
-        /* padding: 10em 0; */
-        min-height: 100vh;
-    }
 
-    .slide-container{
-        height: 80%;
-        /* min-height: 10vh; */
-    }
 
-    .slide{
+    .ranking-box,
+    .ranking-box.ranking-box:nth-child(1),
+    .ranking-box.ranking-box:nth-child(2){
         width: 100%;
-        flex-direction: column;
+        height: 90px;
     }
+
+    .ranking-box .student-image,
+    .ranking-box.ranking-box:nth-child(1) .student-image,
+    .ranking-box.ranking-box:nth-child(2) .student-image{
+        margin: 0 5px;
+        height: 80%;
+
+    }
+
+    .ranking-box .student-name,
+    .ranking-box.ranking-box:nth-child(1) .student-name,
+    .ranking-box.ranking-box:nth-child(2) .student-name{
+        font-size: 18px;
+    }
+
+    .ranking-box .student-description,
+    .ranking-box.ranking-box:nth-child(1) .student-description,
+    .ranking-box.ranking-box:nth-child(2) .student-description{
+        font-size: 12px;
+    }
+
+    .ranking-button{
+        width: 100%;
+    }
+
     
 }
