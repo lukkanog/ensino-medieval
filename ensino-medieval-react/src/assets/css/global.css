@@ -296,9 +296,9 @@ h1,h2,h3,h4,h5{
         width: 30%;
     }
 
-    .footer-info .info{
+    /* .footer-info .info{
         /* flex-direction: column; */
-    }
+    } */
 
     .footer-links{
         width: 45%;
