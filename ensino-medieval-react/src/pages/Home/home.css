@@ -2,11 +2,12 @@
 /*################################ BANNER  ################################ */
 .banner{
     background-image: url("../../assets/img/banner-background.jpg");
-    min-height: 85vh;
+    min-height: 600px;
+    height: 85vh;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    background-attachment: fixed;
+    /* background-attachment: fixed; */
 }
 
 .banner-content{
@@ -98,6 +99,7 @@
 .card-title{
     text-transform: uppercase;
     font-size: 34px;
+    margin-bottom: 5px;
 }
 
 .desenho-maga{
@@ -278,7 +280,8 @@ body{
     background-image: url("../../assets/img/classes-silhueta.png");
     background-color: var(--green);
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: cover;
+    background-position: top;
     position: relative;
 }
 
@@ -454,8 +457,6 @@ body{
 
 
 
-
-
 /* ################################ RESPONSITIVY - BIG SCREENS ################################ */
 @media only screen and (min-width:1600px){
     .card-text{
@@ -465,4 +466,197 @@ body{
     .dot{
         height: 12.5px;
     }
+}
+
+
+/* ################################ RESPONSITIVY - 1200 ################################ */
+@media only screen and (max-width:1200px){
+    .wooden-card{
+        padding: 12% 5%;
+    }
+
+    .desenho-maga{
+        margin-right: 25px;
+    }
+    
+    .card-title{
+        font-size: 28px;
+    }
+
+    .card-text{
+        font-size: 14px;
+    }
+
+    .slide-container{
+        top: -5em;
+    }
+
+    .classe-image{
+        width: 200px;
+        height: 200px;
+    }
+
+    .student-name{
+        font-size: 16px;
+    }
+
+    .ranking-box{
+        width: 45%;
+    }
+
+    .ranking-box.ranking-box:nth-child(1){
+        width: 60%;
+    }
+
+    .ranking-box.ranking-box:nth-child(2){
+        width: 50%;
+    }
+}
+
+/* ################################ RESPONSITIVY - 1000 ################################ */
+@media only screen and (max-width:1000px){
+    .banner{
+        height: 70vh;
+    }
+
+    .logo-e-botoes{
+        width: 400px;
+    }
+    
+    .wooden-card{
+        padding: 15% 5%;
+    }
+
+    .desenho-maga{
+        height: 190px;
+        margin-right: 10px;
+    }
+
+    .card-text{
+        font-size: 12px;
+    }
+
+    .card-title{
+        font-size: 20px;
+    }
+
+    .slide-container{
+        min-height: 60vh;
+    }
+
+    .slide-title{
+        font-size: 25px;
+    }
+
+    .reino-description{
+        margin-left: unset;
+        width: 47.5%;
+    }
+
+    .slide-text{
+        font-size: 12px;
+    }
+
+    .seta-carousel{
+        height: 2em;
+    }
+
+    .ranking-title{
+        font-size: 28px;
+    }
+
+    .trofeu-ranking{
+        width: 10%;
+    }
+
+    .ranking-box{
+        width: 60%;
+    }
+
+    .ranking-box.ranking-box:nth-child(1){
+        width: 80%;
+    }
+
+    .ranking-box.ranking-box:nth-child(2){
+        width: 70%;
+    }
+
+    .ranking-button{
+        width: 60%;
+    }
+}
+
+/* ################################ RESPONSITIVY - 600 (mobile) ################################ */
+@media only screen and (max-width: 600px){
+    h2{
+        font-size: 22px;
+    }
+
+    .banner{
+        height: 80vh;
+        background-image: url("../../assets/img/mobile-banner-background.jpg");
+    }
+    
+    .logo-e-botoes{
+        width: 266px;
+    }
+
+    .botoes-banner{
+        flex-direction: column;
+    }
+
+    .botoes-banner .button{
+        width: 75%;
+        margin-bottom: 12px;
+        font-size: 14px;
+    }
+
+    .Home .wooden-card{
+        padding: 10%;
+        flex-direction: column;
+        height: unset;
+    }
+
+    .desenho-maga{
+        margin-right: 0px;
+        margin-bottom: 1em;
+        height: unset;
+    }
+
+    .card-title{
+        font-size: 22px;
+    }
+
+    .card-text{
+        line-height: 1.8em;
+        font-size: 14px;
+    }
+
+
+
+    .classes{
+        width: 100%;
+        justify-content: space-around;
+    }
+
+    .classe-image{
+        height: 150px;
+        width: 150px;
+    }
+
+    .reinos-container{
+        /* padding: 10em 0; */
+        min-height: 100vh;
+    }
+
+    .slide-container{
+        height: 80%;
+        /* min-height: 10vh; */
+    }
+
+    .slide{
+        width: 100%;
+        flex-direction: column;
+    }
+    
 }

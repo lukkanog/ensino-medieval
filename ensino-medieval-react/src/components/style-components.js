@@ -102,7 +102,8 @@ export const DivContent = styled.div`
 `
 
 // Botão Ver mais
-export const BtnVerMais = styled.div`
+export const BtnVerMais = styled.button`
+border: none !important;
     width: 180px;
     height: 50px;
     margin-top: 2%;
@@ -218,7 +219,7 @@ export const ContainerGuildEnter = styled.div`
 export const CardGuildEnter = styled.div`
     width: 38%;
     height: 280px;
-    display: ${(props) => props.display};
+    display: grid;
     grid-template-rows: 20% 1fr;
     background-color: #ffc58f;
     padding: 48px;
@@ -238,7 +239,7 @@ export const CardGuildEnter = styled.div`
 `
 export const ContainerMyGuild = styled.div`
     width: 100%;
-    margin-left: 20%;
+    margin-left: 20%;    
 `
 
 //#region  MyGuild Component
@@ -297,5 +298,12 @@ export const FaixaContent = styled.div`
     img { 
         width: 64px;
         box-shadow: inset;
+    }
+`
+
+export const SectionButtons = styled.div`
+    display: flex;
+    button {
+        margin-left: 2%;
     }
 `

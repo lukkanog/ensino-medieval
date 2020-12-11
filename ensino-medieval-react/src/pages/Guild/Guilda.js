@@ -13,9 +13,9 @@ import "../../assets/css/global.css";
 import GuildaIcon from '../../assets/icons/shield.svg';
 //#endregion
 
-export default function Guilda() {    
-    const [guildCodeParticipation, setguildCodeParticipation] = useState(String);
-            
+export default function Guilda() {
+    const [guildCodeParticipation, setguildCodeParticipation] = useState(localStorage.getItem('code')); 
+
     return (
         <div>
             <Header logado />
@@ -31,8 +31,7 @@ export default function Guilda() {
                 <S.MenuContent>
                     <p> Você ainda não está em nenhuma guilda </p>
                 </S.MenuContent>
-                <MyGuild />
-                <GuildEnter />
+                {guildCodeParticipation == 'XXX' ? <MyGuild setDisplay='flex' /> : <GuildEnter />}                                
             </S.Content>
             <Footer />
         </div>

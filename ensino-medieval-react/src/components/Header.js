@@ -8,6 +8,11 @@ import IconeLogout from "../assets/img/logout.png";
 export default function Header(props) {
 
     const [header, setHeader] = useState(false);
+    const [mobileMenu, setMobileMenu] = useState(false);
+
+    const changeMobileMenu = () => {
+        setMobileMenu(!mobileMenu);
+    }
 
     const changeHeader = () => {
         if (window.scrollY > 80) {
@@ -27,7 +32,7 @@ export default function Header(props) {
                 </Link>
                 {props.logado ?
 
-                    <ul className="logado menu-options">
+                    <ul className={`${mobileMenu ? "logado menu-options menu-options-active" : "logado menu-options"}`}>
                         <li className="menu-item">
                             <Link className="menu-link" to="/mapa">Reinos</Link>
                         </li>
@@ -44,7 +49,7 @@ export default function Header(props) {
                     </ul>
 
                     :
-                    <ul className="menu-options">
+                    <ul className={`${mobileMenu ? "menu-options menu-options-active" : "menu-options"}`}>
                         <li className="menu-item">
                             <Link className="menu-link" to="/sobre">Sobre</Link>
                         </li>
@@ -59,6 +64,9 @@ export default function Header(props) {
                         </li>
                     </ul>
                 }
+                <div className={`${mobileMenu ? "menu-mobile menu-mobile-active" : "menu-mobile"}`} onClick={changeMobileMenu}>
+                    <span className="menu-button"></span>
+                </div>
             </nav>
         </header>
     )

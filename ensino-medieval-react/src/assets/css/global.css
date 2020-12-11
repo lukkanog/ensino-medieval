@@ -78,6 +78,7 @@ h1,h2,h3,h4,h5{
     width: 25%;
     text-transform: uppercase;
     font-weight: bolder;
+    transition: .5s ease;
 }
 
 .menu-link, .menu-item img{
@@ -121,6 +122,54 @@ h1,h2,h3,h4,h5{
     margin-left: 0;
     margin-right: 5px;
     margin-bottom: -1px;
+}
+
+.menu-mobile{
+    cursor: pointer;
+    transition: .5s ease;
+    display: none;
+    padding: 15px 0;
+}
+
+.menu-mobile:hover{
+    filter: brightness(120%);
+}
+
+.menu-button{
+    display: block;
+    width: 22px;
+    height: 4px;
+    border-radius: 5px;
+    background-color: #F0842A;
+    z-index: 100;
+    transition: inherit;
+}
+
+.menu-button::before{
+    content: "";
+    display: block;
+    width: 22px;
+    height: 4px;
+    border-radius: 5px;
+    background-color: #F0842A;
+    position: relative;
+    bottom: 7px;
+    transition: inherit;
+
+}
+
+.menu-button::after{
+    content: "";
+    display: block;
+    z-index: inherit;
+    width: 22px;
+    height: 4px;
+    border-radius: 5px;
+    background-color: #F0842A;
+    position: relative;
+    top: 3px;
+    transition: inherit;
+
 }
 
 /* ################################ FOOTER ################################ */
@@ -191,11 +240,6 @@ h1,h2,h3,h4,h5{
 }
 
 
-@media only screen and (max-width: 600px){
-    .content{
-        width: 95%;
-    }
-}
 
 
 /* ################################ RESPONSITIVY - BIG SCREENS ################################ */
@@ -203,5 +247,78 @@ h1,h2,h3,h4,h5{
     .content{
         max-width: 1200px;
     }
-    
+}
+
+/* ################################ RESPONSITIVY - 1000 ################################ */
+@media only screen and (max-width:1000px){
+    .menu-mobile{
+        display: block;
+    }
+
+    .menu-options{
+        overflow: hidden;
+        position: absolute;
+        top: -110vh;
+        right: 0;
+        padding: 20%;
+        height: 100vh;
+        justify-content: space-around;
+        flex-direction: column;
+        background: pink;
+        width: 40%;
+        z-index: -1;
+        background: var(--brown);
+        box-shadow: inset #000000aa 0px 0px 50px, #000 5px 5px 30px;
+    }
+
+    .menu-options-active{
+        top: 0vh;
+    }
+
+    .menu-mobile-active .menu-button{
+        /* transform: translateX(-50px); */
+        background: transparent;
+    }
+
+    .menu-mobile-active .menu-button::before{
+        transform: rotate(45deg) translate(5px, 5px);
+    }
+
+    .menu-mobile-active .menu-button::after{
+        transform: rotate(-45deg) translate(5px, -5px);
+    }
+
+    .footer .content{
+        padding: 4em 0;
+    }
+
+    .logo-footer{
+        width: 30%;
+    }
+
+    .footer-info .info{
+        /* flex-direction: column; */
+    }
+
+    .footer-links{
+        width: 45%;
+        /* margin-bottom: 25px; */
+    }
+
+    .copyright{
+        font-size: 14px;
+    }
+
+
+}
+
+@media only screen and (max-width: 600px){
+    .content{
+        width: 90%;
+    }
+
+    .menu-options{
+        width: 100%;
+        height: 80vh;
+    }
 }

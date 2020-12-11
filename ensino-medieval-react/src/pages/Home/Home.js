@@ -48,7 +48,7 @@ export default function Home() {
                 <HomeCarousel />
             </section>
 
-            <section class="container classes-container">
+            <section className="container classes-container">
                 <div className="content classes-content">
                     <h2 className="classes-title">Escolha sua classe!</h2>
                     <div className="classes">

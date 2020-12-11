@@ -12,7 +12,7 @@ import Missoes from './pages/Quest/Missoes';
 import Guilda from './pages/Guild/Guilda';
 
 const Router = ( 
-  <BrowserRouter>
+  <BrowserRouter basename={process.env.PUBLIC_URL}>
       <Switch>
         <Route path="/perfil" component={Profile}/>
         <Route path="/ranking" component={Ranking}/>

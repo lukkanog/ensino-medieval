@@ -23,7 +23,7 @@ export default function Footer() {
                             </li>
                         </ul>
 
-                        <p class="copyright">2020 © Todos os direitos reservados</p>
+                        <p className="copyright">2020 © Todos os direitos reservados</p>
                     </div>
                 </div>
             </div>
