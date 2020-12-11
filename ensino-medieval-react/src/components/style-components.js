@@ -1,5 +1,6 @@
 import styled from 'styled-components';
-
+import RankingTop from './rankingTop';
+import BackGroundGuild from '../assets/icons/background-guild-ranking.svg'
 //#region Componente Posicao
 export const objPosition = styled.div`    
     width: 40%;
@@ -217,7 +218,7 @@ export const ContainerGuildEnter = styled.div`
 export const CardGuildEnter = styled.div`
     width: 38%;
     height: 280px;
-    display: grid;
+    display: ${(props) => props.display};
     grid-template-rows: 20% 1fr;
     background-color: #ffc58f;
     padding: 48px;
@@ -237,6 +238,7 @@ export const CardGuildEnter = styled.div`
 `
 export const ContainerMyGuild = styled.div`
     width: 100%;
+    margin-left: 20%;
 `
 
 //#region  MyGuild Component
@@ -244,6 +246,56 @@ export const ContainerParticipantes = styled.div`
     width: 100%;
     display: flex;
     margin-top: 2%;
-    margin-left: 10%;
 
+`
+export const MyGuildRanking = styled.div`
+    width: 95%;
+    height: 420px;    
+    background-image: url(${(props) => props.imgUrl});
+    background-size: 94% 100%;
+    background-repeat: no-repeat;    
+    padding: 4%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;     
+`
+
+export const MyGuildRankingPosition = styled.div`
+    display: flex; 
+    align-items: center;
+    width: 30%;
+    justify-content: space-around;
+    p {
+        font-size: 1.5em !important;
+    }
+`
+
+export const MyGuildRankingClassificacao = styled.div`
+    display: flex; 
+    align-items: center;            
+`
+
+export const MyGuildRankingFaixa = styled.div`    
+    height: 108px;
+    background-image: url(${(props) => props.imgUrl});
+    background-repeat: no-repeat;    
+    margin-left: -17%;     
+    display: flex;
+    justify-content: center;   
+`
+
+export const FaixaContent = styled.div`
+    width: 85%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    p {
+        color: #edc7a5;
+        font-size: 1.2em;
+    }
+    img { 
+        width: 64px;
+        box-shadow: inset;
+    }
 `

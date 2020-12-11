@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1464" height="123" viewBox="0 0 1464 123">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #a8692d;
+        fill-rule: evenodd;
+        filter: url(#filter);
+      }
+    </style>
+    <filter id="filter" x="-4" y="2" width="1464" height="123" filterUnits="userSpaceOnUse">
+      <feOffset result="offset" dy="5" in="SourceAlpha"/>
+      <feGaussianBlur result="blur" stdDeviation="3.162"/>
+      <feFlood result="flood" flood-color="#201408" flood-opacity="0.41"/>
+      <feComposite result="composite" operator="in" in2="blur"/>
+      <feBlend result="blend" in="SourceGraphic"/>
+      <feGaussianBlur result="blur-2" stdDeviation="5.916" in="SourceAlpha"/>
+      <feFlood result="flood-2" flood-opacity="0.11"/>
+      <feComposite result="composite-2" operator="out" in2="blur-2"/>
+      <feOffset result="offset-2"/>
+      <feComposite result="composite-3" operator="in" in2="SourceAlpha"/>
+      <feBlend result="blend-2" mode="multiply" in2="blend"/>
+    </filter>
+  </defs>
+  <image id="Plano_de_Fundo" data-name="Plano de Fundo" width="1464" height="123" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAABbgAAAB7CAYAAAC2GOafAAAD9klEQVR4nO3YMQ0AMAzAsG78+fbccESyKeTL2d03AAAAAAAQcwUDAAAAAKDI4AYAAAAAIMngBgAAAAAgyeAGAAAAACDJ4AYAAAAAIMngBgAAAAAgyeAGAAAAACDJ4AYAAAAAIMngBgAAAAAgyeAGAAAAACDJ4AYAAAAAIMngBgAAAAAgyeAGAAAAACDJ4AYAAAAAIMngBgAAAAAgyeAGAAAAACDJ4AYAAAAAIMngBgAAAAAgyeAGAAAAACDJ4AYAAAAAIMngBgAAAAAgyeAGAAAAACDJ4AYAAAAAIMngBgAAAAAgyeAGAAAAACDJ4AYAAAAAIMngBgAAAAAgyeAGAAAAACDJ4AYAAAAAIMngBgAAAAAgyeAGAAAAACDJ4AYAAAAAIMngBgAAAAAgyeAGAAAAACDJ4AYAAAAAIMngBgAAAAAgyeAGAAAAACDJ4AYAAAAAIMngBgAAAAAgyeAGAAAAACDJ4AYAAAAAIMngBgAAAAAgyeAGAAAAACDJ4AYAAAAAIMngBgAAAAAgyeAGAAAAACDJ4AYAAAAAIMngBgAAAAAgyeAGAAAAACDJ4AYAAAAAIMngBgAAAAAgyeAGAAAAACDJ4AYAAAAAIMngBgAAAAAgyeAGAAAAACDJ4AYAAAAAIMngBgAAAAAgyeAGAAAAACDJ4AYAAAAAIMngBgAAAAAgyeAGAAAAACDJ4AYAAAAAIMngBgAAAAAgyeAGAAAAACDJ4AYAAAAAIMngBgAAAAAgyeAGAAAAACDJ4AYAAAAAIMngBgAAAAAgyeAGAAAAACDJ4AYAAAAAIMngBgAAAAAgyeAGAAAAACDJ4AYAAAAAIMngBgAAAAAgyeAGAAAAACDJ4AYAAAAAIMngBgAAAAAgyeAGAAAAACDJ4AYAAAAAIMngBgAAAAAgyeAGAAAAACDJ4AYAAAAAIMngBgAAAAAgyeAGAAAAACDJ4AYAAAAAIMngBgAAAAAgyeAGAAAAACDJ4AYAAAAAIMngBgAAAAAgyeAGAAAAACDJ4AYAAAAAIMngBgAAAAAgyeAGAAAAACDJ4AYAAAAAIMngBgAAAAAgyeAGAAAAACDJ4AYAAAAAIMngBgAAAAAgyeAGAAAAACDJ4AYAAAAAIMngBgAAAAAgyeAGAAAAACDJ4AYAAAAAIMngBgAAAAAgyeAGAAAAACDJ4AYAAAAAIMngBgAAAAAgyeAGAAAAACDJ4AYAAAAAIMngBgAAAAAgyeAGAAAAACDJ4AYAAAAAIMngBgAAAAAgyeAGAAAAACDJ4AYAAAAAIMngBgAAAAAgyeAGAAAAACDJ4AYAAAAAIMngBgAAAAAgyeAGAAAAACDJ4AYAAAAAoGdmPn3gBNr+UBPNAAAAAElFTkSuQmCC"/>
+  <path id="Retângulo_1" data-name="Retângulo 1" class="cls-1" d="M13.311,8H1396.46a6.158,6.158,0,0,1,6.31,6L1448,57l-45.23,45a6.157,6.157,0,0,1-6.31,6H13.311A6.161,6.161,0,0,1,7,102V14A6.161,6.161,0,0,1,13.311,8Z"/>
+</svg>

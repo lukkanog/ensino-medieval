@@ -1,9 +1,12 @@
 import * as S from './style-components';
 import BtnVerMais from './btnVerMais';
+import { React, useState, useEffect } from 'react';
 
-export default function GuildEnter({ display }) {
+export default function GuildEnter() {
+    const [code, setCode] = useState(String);    
+
     return (
-        <S.ContainerGuildEnter>
+        <S.ContainerGuildEnter display={code == 'XXX' ? 'grid' : 'none' } >
             <S.CardGuildEnter>
                 <h2> Criar Guilda </h2>
                 <p> Envie uma carta para solicitar a criação de uma guilda com seus parceiros</p>

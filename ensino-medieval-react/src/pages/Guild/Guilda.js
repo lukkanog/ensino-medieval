@@ -13,9 +13,9 @@ import "../../assets/css/global.css";
 import GuildaIcon from '../../assets/icons/shield.svg';
 //#endregion
 
-export default function Guilda() {
-    const [guildParticipation, setguildParticipation] = useState(String);
-    useEffect(() => setguildParticipation('XXX'), [])
+export default function Guilda() {    
+    const [guildCodeParticipation, setguildCodeParticipation] = useState(String);
+            
     return (
         <div>
             <Header logado />

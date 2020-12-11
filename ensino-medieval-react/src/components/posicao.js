@@ -1,9 +1,9 @@
 import * as S from './style-components';
 import Aluno from '../assets/icons/eu.svg';
 
-export default function Posicao({ posicao, objPlayer, backgroundColor, typeRanking }) {
+export default function Posicao({ posicao, objPlayer, backgroundColor, typeRanking, backgroundImage }) {
     return (
-        <S.objPosition style={{ backgroundColor: `#${backgroundColor}` }}>
+        <S.objPosition style={{ backgroundColor: `#${backgroundColor}`, backgroundImage: `url('${backgroundImage}')` }}>
             <p>{posicao}</p>
             <img src={Aluno}></img>
             <div>
