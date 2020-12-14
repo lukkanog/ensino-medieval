@@ -117,3 +117,59 @@ input::placeholder{
 .esqueci-senha:hover{
     text-decoration: underline;
 }
+
+@media only screen and (min-width:1600px){
+    .login-container{
+        padding-right: 12.5%;
+    }
+}
+
+@media only screen and (max-width:1200px){
+    .login-container{
+        width: 55%;
+    }
+}
+
+@media only screen and (max-width:1000px){
+    .Login{
+        background-image: none;
+    }
+
+    .back-link{
+        position: absolute;
+        z-index: 1;
+
+    }
+    
+    .login-container{
+        width: 100%;
+        padding-right: unset;
+        /* background-size: 150%; */
+        background-position-x: 30%;
+        background-size: 150%;
+    }
+
+    .login-content{
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media only screen and (max-width:600px){
+    .login-block{
+        min-height: 400px;
+        width: 70%;
+        position: relative;
+        top: -20px
+
+    }
+
+    .login-title{
+        font-size: 22px;
+    }
+
+    .Login .logo{
+        width: 90%;
+    }
+}
