@@ -5,7 +5,7 @@
     background-repeat: no-repeat;
     background-attachment: fixed;
     padding: 15em 0;
-
+    height: unset;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -215,7 +215,7 @@
     height: unset;
     padding: unset;
     top: unset;
-    margin-bottom: 15em;
+    margin-bottom: 10em;
     display: block;
 }
 
