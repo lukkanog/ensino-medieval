@@ -10,7 +10,9 @@ export default function GuildEnter(code) {
     function handleEntrar() {
         setCodeTest('XXX');        
         localStorage.setItem('code','XXX');
-        window.location.reload();
+        history.push('/guildas');
+        history.go();
+        // window.location.reload();
         
     }        
     return (

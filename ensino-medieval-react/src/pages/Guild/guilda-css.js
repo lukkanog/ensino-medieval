@@ -56,3 +56,22 @@ export const MenuContent = styled.div`
         color: #ffc58f;
     }
 `
+
+export const GuildaDiv = styled.div`
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    
+    div {
+        width: 17%;        
+        color: #edc7a5;
+        p{                        
+            color: #fb602a;
+            font-size: 22px;
+            text-align: left;
+        }
+    }
+    img {
+        width: 60px;
+    }
+`

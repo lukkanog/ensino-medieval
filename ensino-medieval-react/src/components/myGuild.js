@@ -22,7 +22,9 @@ export default function MyGuild({ setDisplay }) {
     
     function handleSair() {
         localStorage.removeItem('code'); 
-        window.location.reload();
+        history.push('/guildas');
+        history.go();
+        // window.location.reload();
     }
     return (
         <S.ContainerMyGuild>
