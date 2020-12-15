@@ -29,7 +29,7 @@ export default function Guilda() {
             <S.Content>
                 {/* Escolha do ranking */}
                 <S.MenuContent>
-                    <p> Você ainda não está em nenhuma guilda </p>
+                    {guildCodeParticipation === 'XXX' ? <p>Fanrofeiros do Leste</p> : <p> Você ainda não está em nenhuma guilda </p>}
                 </S.MenuContent>
                 {guildCodeParticipation == 'XXX' ? <MyGuild setDisplay='flex' /> : <GuildEnter />}                                
             </S.Content>
