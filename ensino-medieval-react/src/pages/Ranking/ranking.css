@@ -9,12 +9,13 @@
 }
 
 .bannerRanking {
-    background-image: url("../../assets/img/banner-background.jpg");
-    min-height: 85vh;
+    background-image: url("../../assets/img/banner-background.jpg");    
+    min-height: 75vh;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    
 }
 
 .bannerContentRanking {
@@ -30,4 +31,10 @@
 .bannerContentRanking img {
     width: 30%;
     height: 200px;
+}
+
+@media only screen and (max-width:800px){
+    .bannerRanking {        
+        min-height: 55vh;
+    }    
 }

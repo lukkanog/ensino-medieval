@@ -24,6 +24,36 @@ export const objPosition = styled.div`
         font-size: 24px;
         width: 15%;        
     }
+    @media only screen and (max-width:1200px){                
+        width: 60%;
+        background-color: red;                
+    } 
+
+    @media only screen and (max-width:940px){
+        div {            
+            font-size: 16px;            
+            width: 100%;
+            div {
+                width: 120px;
+            }
+        }        
+        p {
+            width: 15%;
+        }
+    }   
+    
+    @media only screen and (max-width:600px){
+        height: 80px;
+        img {
+            width: 15%;
+        }
+        div {
+            font-size: 12px;
+        }
+        p {
+            font-size: 16px;
+        }
+    }  
 `
 //#endregion
 
@@ -50,12 +80,20 @@ export const positionTop = styled.div`
         width: 100%;        
         font-size: 18px;
         margin-top: 3%;
-    }      
-    p {
-        font-size: 32px;  
-        text-align: center;                    
-    }        
-    
+    } 
+    @media only screen and (max-width:940px){
+        div {            
+            font-size: 12px;
+        }        
+        margin-top: 5%;
+    } 
+    @media only screen and (max-width:600px){
+        div {            
+            font-size: 12px;
+        }        
+        margin-top: 5%;
+    }     
+                  
 `
 
 export const Objeto = styled.div`
@@ -72,6 +110,16 @@ export const Objeto = styled.div`
         font-size: 36px;
         color: #fb602a;
     }
+    
+    @media only screen and (max-width:1200px){                
+        width: 18%;
+    } 
+    @media only screen and (max-width:940px){                
+        margin-top: 60px;
+    } 
+    @media only screen and (max-width:600px){
+        width: 20%;
+    }    
 `
 
 export const pontuacaoTop = styled.div`
@@ -88,6 +136,16 @@ export const pontuacaoTop = styled.div`
         color: white;
         font-size: 28px;
     }
+    @media only screen and (max-width:940px){
+        p {            
+            font-size: 24px;
+        }
+    } 
+    @media only screen and (max-width:600px){
+        p {            
+            font-size: 16px;
+        }                
+    }    
 `
 //#endregion
 
@@ -139,6 +197,10 @@ export const Search = styled.div`
         border:none !important;
     };
     z-index: 1;
+    @media only screen and (max-width:1200px){                
+        width: 60%;        
+        margin: 4% 0 3% 0;
+    } 
     `
 
 //#region Kingdom Component

@@ -1,31 +1,22 @@
 import styled from 'styled-components';
 
-export const Banner = styled.div`
-    background-image: url("../../assets/img/banner-background.jpg");
-    min-height: 85vh;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;        
-`
-
-export const BannerContent = styled.div`    
-    min-height: inherit;
-    display: flex;
-    justify-content: center;
-    align-items: center;    
-`
-
 export const Icon = styled.div`
     background-image: url("../../assets/img/trophy.svg");    
     width: 200px;
     height: 200px;
     background-position: center;      
+    @media only screen and (max-width:800px){
+        height: 150px;
+        width: 150px;
+    }
 `
 
 export const Title = styled.h1`
     color: #ffc58f;
     font-size: 4em;
+    @media only screen and (max-width:800px){
+        font-size: 3em;
+    }
 `
 
 export const Content = styled.div`
@@ -49,6 +40,16 @@ export const MenuContent = styled.div`
     justify-content: space-between;
     padding: 2px;    
     margin-top: -3%; 
+    @media only screen and (max-width:940px){
+        width: 75%;        
+    } 
+    @media only screen and (max-width:600px){
+        margin-top: -40px;
+        height: 80px;        
+    }  
+    @media only screen and (max-width:760px){
+        height: 85px;        
+    }  
 `
 
 export const MenuContentChoice = styled.div`
@@ -67,7 +68,19 @@ export const MenuContentChoice = styled.div`
         font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
         font-weight: bold; 
         color: #edc7a5;
-    };    
+    };  
+    @media only screen and (max-width:940px){
+        p {            
+            font-size: 18px;
+        }
+        width: 30%;
+    } 
+    @media only screen and (max-width:600px){
+        p {
+            font-size: 14px;
+        }        
+        width: 150px;        
+    }    
 `
 export const Img = styled.img`
     width: 30%;    
@@ -81,6 +94,13 @@ export const TitleYourPosition = styled.p`
     text-align: left;
     margin-top: 3%;
     width: 40%;
+    @media only screen and (max-width:1200px){
+        width: 60%;        
+    } 
+    @media only screen and (max-width:940px){
+        font-size: 22px;
+    } 
+    
 `
 
 // Alinhamento horizontal do top 3 - Ranking
@@ -99,6 +119,17 @@ export const RankingTopDiv = styled.div`
     justify-content: center;  
     height: 20%;   
     z-index: -1;     
+
+    @media only screen and (max-width:1200px){        
+        margin-top: -7%;
+    }   
+    @media only screen and (max-width:940px){        
+        margin-top: -15%;   
+        min-height: 85vh;                   
+    }   
+    @media only screen and (max-width:800px){      
+        min-height: 70vh;                   
+    } 
 `
 
 
