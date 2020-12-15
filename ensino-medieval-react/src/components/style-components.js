@@ -309,6 +309,8 @@ export const ContainerParticipantes = styled.div`
     width: 100%;
     display: flex;
     margin-top: 2%;
+    overflow: auto;
+  white-space: nowrap;
 
 `
 export const MyGuildRanking = styled.div`
